@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Cinzel";
+  src: url(/fonts/Cinzel/Cinzel-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Athena";
+  src: url(/fonts/Athena-Regular.ttf);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-Cinzel: "Cinzel", serif;
+  --font-Athena: "Athena"; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+p{
+  font-family: var(--font-Poppins);
+}
+h1, h2, h3, h4, h5, h6, li{
+  font-family: var(--font-Cinzel);
+}
+
+@media (max-width: 1050px) {
+  .amenities-container{
+    gap: 35px;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
