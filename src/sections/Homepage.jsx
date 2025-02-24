@@ -33,10 +33,10 @@ const ViewContainer = ({ items }) => {
         <div
           ref={viewBoxRef}
           key={index}
-          className="relative view-box lg:w-[25%] m-auto w-[50%] min-h-[47.5vh] lg:min-h-[90vh] sm:min-h-[70vh] border border-white"
+          className="relative view-box lg:w-[25%] m-auto w-[50%] h-[47.5vh] lg:h-[90vh] sm:h-[70vh] border border-white"
         >
           <Image
-            width={481} height={929} layout="responsive"
+            layout="fill"
             src={item.image}
             alt={item.alt}
             className="w-full h-full object-cover"
@@ -52,11 +52,11 @@ const ViewContainer = ({ items }) => {
 
           <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px]">
             <Image
-              width={115} height={115} layout="responsive"
-              sizes="5vw"
+              width={90} height={90} layout="responsive"
+              
               src={item.icon}
               alt="Icon"
-              className="w-full h-full object-cover"
+              className="w-[5vw] object-cover"
             />
           </div>
         </div>

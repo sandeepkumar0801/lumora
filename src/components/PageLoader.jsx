@@ -60,11 +60,11 @@ const PageLoader = ({ onAnimationComplete }) => {
 
   return (
     <div ref={containerRef} className="w-full h-screen fixed bg-greenTheme z-[50]">
-      <div className="flex flex-col w-full h-full text-[#cb9967] leading-[70px] justify-center items-center">
-        <h1 ref={h1Ref} className="text-[9vw]">
+      <div className="flex flex-col w-full h-full text-[#cb9967] leading-[30px] 450:leading-[70px] justify-center items-center">
+        <h1 ref={h1Ref} className="450:text-[9vw] text-[13vw]">
           Lumora
         </h1>
-        <h3 ref={h3Ref} className="text-[2.9vw]">
+        <h3 ref={h3Ref} className="450:text-[2.9vw] text-[4vw]">
           for a better way of life
         </h3>
       </div>

@@ -259,13 +259,13 @@ const Amenities = () => {
         </div>
 
         {/* For medium screens (above sm but below lg): 2 parent sections */}
-        <div className="md:flex lg:hidden hidden">
+        <div className="sm:flex lg:hidden hidden">
           <GridSection sections={sections1} />
           <GridSection sections={sections2} />
         </div>
 
         {/* For small screens (sm and below): 1 parent section */}
-        <div className="sm:flex md:hidden">
+        <div className="450:flex sm:hidden">
           <GridSection sections={sections1} />
         </div>
       </div>
