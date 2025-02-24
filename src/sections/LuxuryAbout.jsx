@@ -37,7 +37,7 @@ const LuxuryAbout = () => {
       </section>
       <div className="schedule-visit w-full relative h-[250px] md:py-6 py-4 flex flex-col justify-center gap-6 items-center">
         <div className="absolute w-full h-full -z-[10]">
-          <Image layout="fill" className="w-full h-full" src="/Golden-pattern.png" alt="" />
+          <Image width={1921} height={429} layout="responsive" className="w-full h-full" src="/Golden-pattern.png" alt="Golden Pattern" />
         </div>
         <h2 className="lg:text-4xl text-3xl text-white font-normal">Schedule a visit</h2>
         <p className="lg:w-[50%] sm:w-[70%] w-[95%] text-center text-white leading-normal">

@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="relative py-12 w-full flex gap-[25px] flex-wrap sm:justify-around justify-between px-8">
-      <Image layout="fill" className='absolute top-0 left-0 w-full h-full object-cover -z-[10]' src="/Footer-Pattern.png" alt="footer-pattern" />
+      <Image width={1921} height={429} layout="responsive" className='absolute top-0 left-0 w-full h-full object-cover -z-[10]' src="/Footer-Pattern.png" alt="footer-pattern" />
       
       <div className="logo w-[15%] min-w-[150px]">
       <Image className='w-full h-auto' src="/logo.png" alt="footer-logo" width={325} height={90} />
