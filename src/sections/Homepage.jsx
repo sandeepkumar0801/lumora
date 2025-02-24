@@ -36,7 +36,7 @@ const ViewContainer = ({ items }) => {
           className="relative view-box lg:w-[25%] m-auto w-[50%] min-h-[47.5vh] lg:min-h-[90vh] sm:min-h-[70vh] border border-white"
         >
           <Image
-            layout="fill"
+            width={481} height={929} layout="responsive"
             src={item.image}
             alt={item.alt}
             className="w-full h-full object-cover"
@@ -52,7 +52,7 @@ const ViewContainer = ({ items }) => {
 
           <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px]">
             <Image
-              layout="fill"
+              width={115} height={115} layout="responsive"
               sizes="5vw"
               src={item.icon}
               alt="Icon"
@@ -125,7 +125,7 @@ const Homepage = () => {
         </div>
 
         <Image
-        layout="fill"
+        width={450} height={600} layout="responsive"
           src="https://images.unsplash.com/photo-1739999373818-ab59c32b23c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D"
           alt="home"
           className="w-full 450:hidden block ml-auto h-full object-cover"
