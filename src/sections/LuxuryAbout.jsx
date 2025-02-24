@@ -4,9 +4,9 @@ import React from "react";
 const LuxuryAbout = () => {
   return (
     <>
-      <section className="py-16">
-        <div className="flex flex-wrap gap-24 justify-center 1050:justify-normal items-center">
-          <div className="img xl:w-[510px] sm:w-[480px] relative sm:h-[480px] w-[300px] h-[300px] xl:h-[510px] after:content-[''] after:absolute after:bg-[#0e291a] after:-top-[20px] sm:after:left-[122px] after:left-[80px] after:w-[80%] after:h-[80%] after:z-[-1]">
+      <section className="md:py-16 py-8">
+        <div className="flex flex-wrap gap-24 justify-center  items-center">
+          <div className="img xl:w-[510px] sm:w-[480px] relative sm:h-[480px] 450:w-[300px] w-[260px] h-[280px] xl:h-[510px] after:content-[''] after:absolute after:bg-[#0e291a] after:-bottom-[20px] sm:after:left-[122px] 450:after:left-[80px] after:right-[27.5%] after:w-[80%] after:h-[80%] after:z-[-1]">
             <Image
               fill
               sizes="510px"
@@ -18,7 +18,7 @@ const LuxuryAbout = () => {
           <div className="content xl:w-[510px] w-[475px] -translate-y-8 sm:px-0 px-4">
             <h1 className="lg:text-4xl text-3xl text-start text-themeText">Lumora Estates</h1>
             <h1 className="lg:text-4xl text-3xl text-start text-themeText">The luxury retreat</h1>
-            <p className="py-8 w-[80%] leading-normal">
+            <p className="py-8 leading-normal">
               Welcome to Lumora Estates, where passion meets purpose.
               <br /> Founded in 2024, we have swiftly become a trailblazer in
               the real estate sector, transforming challenges into opportunities
@@ -26,7 +26,7 @@ const LuxuryAbout = () => {
               we drive success for our clients through innovation, commitment,
               and a customer-first approach.
             </p>
-            <p className=" w-[80%] leading-normal">
+            <p className=" leading-normal">
               At the core of our organization is a dynamic team of professionals
               who bring their expertise, creativity, and dedication to every
               project. Together, we strive to make a lasting impact, ensuring
@@ -35,10 +35,12 @@ const LuxuryAbout = () => {
           </div>
         </div>
       </section>
-      <div className="schedule-visit w-full relative py-6 flex flex-col gap-6 items-center">
-        <Image fill sizes="100vw" className="absolute w-full -z-10 h-full top-0 left-0" src="/Golden-pattern.png" alt="golden-pattern" />
-        <h2 className="lg:text-4xl text-white font-normal">Schedule a visit</h2>
-        <p className="w-[50%] text-center text-white leading-normal">
+      <div className="schedule-visit w-full relative h-[250px] md:py-6 py-4 flex flex-col justify-center gap-6 items-center">
+        <div className="absolute w-full h-full -z-[10]">
+          <img layout="responsive" className="w-full h-full" src="/Golden-pattern.png" alt="" />
+        </div>
+        <h2 className="lg:text-4xl text-3xl text-white font-normal">Schedule a visit</h2>
+        <p className="lg:w-[50%] sm:w-[70%] w-[95%] text-center text-white leading-normal">
           Getting started on your home-buying journey can be overwhelming & can
           deter you from taking the first step
         </p>

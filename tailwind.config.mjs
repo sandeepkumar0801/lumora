@@ -13,6 +13,7 @@ export default {
         themeText: "#233323",
         greenTheme: "#0e291a",
         creamBg: "#e9e4d1",
+        mainText: "#cc9a64",
       },
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
@@ -20,7 +21,9 @@ export default {
       },
       screens: {
         1050: "1050px", // Custom breakpoint for 1050px
+        450: "450px", // Custom breakpoint for 450px
       },
+
     },
   },
   plugins: [],

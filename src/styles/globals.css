@@ -26,9 +26,3 @@ p{
 h1, h2, h3, h4, h5, h6, li{
   font-family: var(--font-Cinzel);
 }
-
-@media (max-width: 1050px) {
-  .amenities-container{
-    gap: 35px;
-  }
-}

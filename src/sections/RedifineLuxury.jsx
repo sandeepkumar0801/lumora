@@ -1,5 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+
+
 
 const RedifineLuxury = () => {
   const paraContent = [
@@ -8,24 +11,33 @@ const RedifineLuxury = () => {
     "Wellness Real Estate",
     "Quality and Innovation",
   ];
+  const logoRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(logoRef.current, {
+      rotation: 360, // Rotate 360 degrees
+      duration: 15,  // Duration of one full rotation (seconds)
+      repeat: -1,    // Infinite rotation
+      ease: "linear" // Smooth continuous rotation
+    });
+  }, []);
   return (
     <section className="">
       <div className="w-full flex flex-col items-center ">
-        <h1 className="lg:text-4xl sm:text-3xl text-2xl text-themeText pt-[5rem] pb-[2rem] font-medium">
+        <h1 className="lg:text-4xl sm:text-3xl text-2xl text-center text-themeText 450:pt-[3rem] pt-[2rem] pb-[1.5rem] font-medium">
           Are you ready to redefine luxury?
         </h1>
-        <p className="text-center w-[70%] sm:text-lg text-sm">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic alias
-          tempore dicta in similique illum asperiores a aut, aliquam harum enim.
-          Nisi repellat hic, quas itaque harum provident reiciendis! Enim.
+        <p className="text-center 450:w-[70%] w-[90%] pb-[0.75rem] sm:text-lg text-sm">
+        Imagine mornings in the foothills near the Delhi-Dehradun Expressway where sunlight filters through emerald canopies, afternoons spent savoring the greens of a private golf course, and evenings gathering around a crackling campfire.
         </p>
       </div>
       <div className="w-full relative pt-4">
-        <div className="absolute z-10 left-[45%] w-[30%]">
+        <div className="absolute z-10 left-[50%] top-[17%] translate-x-[-50%] w-[20%]">
         <Image
+          ref={logoRef} 
           width={334}
           height={334}
-          className=" w-full "
+          className="w-full "
           src="/Logo-circle.png"
           alt="redefine-logo"
         />
@@ -38,18 +50,19 @@ const RedifineLuxury = () => {
           alt="luxury-img"
           className="w-full object-cover relative z-20"
         />
+
         <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-white via-white/80 to-transparent pointer-events-none"></div>
       </div>
       <div className="flex flex-wrap w-full bg-creamBg justify-evenly">
         {paraContent.map((content, index) => (
           <div
-            className="flex flex-col px-6 py-8 gap-4 items-center jusitify-center min-w-[300px]"
+            className="flex flex-col px-6 md:py-8 py-4 md:gap-4 gap-2 items-center jusitify-center sm:w-[20%] w-[50%]"
             key={index}
           >
-            <h1 className="text-5xl font-semibold text-themeText">
+            <h1 className="lg:text-5xl text-3xl font-semibold text-themeText">
               {index + 1}
             </h1>
-            <h2 className="w-[60%] text-lg text-center font-semibold text-themeText">
+            <h2 className="450:w-[60%] w-full md:text-lg text-sm text-center font-semibold text-themeText">
               {content}
             </h2>
           </div>
