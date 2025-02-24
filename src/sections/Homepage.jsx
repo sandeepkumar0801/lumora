@@ -52,7 +52,7 @@ const ViewContainer = ({ items }) => {
 
           <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px]">
             <Image
-              fill
+              layout="fill"
               sizes="5vw"
               src={item.icon}
               alt="Icon"
@@ -113,17 +113,19 @@ const Homepage = () => {
               settle for ordinary when you can live extraordinary?"
             </h2>
           </div>
-          <img
+          <Image
+            width={677} height={1084} layout="responsive"
             className="w-full h-full object-cover object-center "
             src="/Header-Background.png"
             alt="Header patter"
           />
         </div>
         <div className="w-[91.5%] 450:block hidden ml-auto ">
-          <img src="/header-image.png" alt="home" className=" object-cover" />
+          <Image width={1755} height={1077} layout="responsive" src="/header-image.png" alt="home" className=" object-cover" />
         </div>
 
-        <img
+        <Image
+        layout="fill"
           src="https://images.unsplash.com/photo-1739999373818-ab59c32b23c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D"
           alt="home"
           className="w-full 450:hidden block ml-auto h-full object-cover"

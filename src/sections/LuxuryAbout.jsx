@@ -9,7 +9,7 @@ const LuxuryAbout = () => {
           <div className="img xl:w-[510px] sm:w-[480px] relative sm:h-[480px] 450:w-[300px] w-[260px] h-[280px] xl:h-[510px] after:content-[''] after:absolute after:bg-[#0e291a] after:-bottom-[20px] sm:after:left-[122px] 450:after:left-[80px] after:right-[27.5%] after:w-[80%] after:h-[80%] after:z-[-1]">
             <Image
               fill
-              sizes="510px"
+              layout="fill"
               className="w-full h-full object-cover"
               src="/Luxury-retreat.png"
               alt="luxury-about"
@@ -37,7 +37,7 @@ const LuxuryAbout = () => {
       </section>
       <div className="schedule-visit w-full relative h-[250px] md:py-6 py-4 flex flex-col justify-center gap-6 items-center">
         <div className="absolute w-full h-full -z-[10]">
-          <img layout="responsive" className="w-full h-full" src="/Golden-pattern.png" alt="" />
+          <Image layout="fill" className="w-full h-full" src="/Golden-pattern.png" alt="" />
         </div>
         <h2 className="lg:text-4xl text-3xl text-white font-normal">Schedule a visit</h2>
         <p className="lg:w-[50%] sm:w-[70%] w-[95%] text-center text-white leading-normal">

@@ -35,8 +35,7 @@ const RedifineLuxury = () => {
         <div className="absolute z-10 left-[50%] top-[17%] translate-x-[-50%] w-[20%]">
         <Image
           ref={logoRef} 
-          width={334}
-          height={334}
+          width={334} height={334} layout="responsive"
           className="w-full "
           src="/Logo-circle.png"
           alt="redefine-logo"
@@ -44,8 +43,7 @@ const RedifineLuxury = () => {
         </div>
 
         <Image
-          width={1920}
-          height={1120}
+          width={1920} height={1108} layout="responsive"
           src="/Redefine-luxury.png"
           alt="luxury-img"
           className="w-full object-cover relative z-20"
