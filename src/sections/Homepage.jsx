@@ -36,8 +36,7 @@ const ViewContainer = ({ items }) => {
           className="relative view-box lg:w-[25%] m-auto w-[50%] lg:h-[90vh] sm:h-[70vh] border border-white h-[47.5vh]"
         >
           <Image
-            fill
-            sizes="20vw"
+            layout="fill"
             src={item.image}
             alt={item.alt}
             className="w-full h-full object-cover"
