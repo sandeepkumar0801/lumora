@@ -114,7 +114,7 @@ const Homepage = () => {
             </h2>
           </div>
           <Image
-            width={677} height={1084} layout="responsive"
+            width={677} height={1084} 
             className="w-full h-full object-cover object-center "
             src="/Header-Background.png"
             alt="Header patter"
