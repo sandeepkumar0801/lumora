@@ -33,7 +33,7 @@ const ViewContainer = ({ items }) => {
         <div
           ref={viewBoxRef}
           key={index}
-          className="relative view-box lg:w-[25%] m-auto w-[50%] lg:h-[90vh] sm:h-[70vh] border border-white h-[47.5vh]"
+          className="relative view-box lg:w-[25%] m-auto w-[50%] min-h-[47.5vh] lg:min-h-[90vh] sm:min-h-[70vh] border border-white"
         >
           <Image
             layout="fill"
