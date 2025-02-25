@@ -60,7 +60,7 @@ const RedifineLuxury = () => {
             <h1 className="lg:text-5xl text-3xl font-semibold text-themeText">
               {index + 1}
             </h1>
-            <h2 className="450:w-[60%] w-full md:text-lg text-sm text-center font-semibold text-themeText">
+            <h2 className="450:w-[60%] w-full md:text-lg font-athena text-sm text-center font-semibold text-themeText">
               {content}
             </h2>
           </div>

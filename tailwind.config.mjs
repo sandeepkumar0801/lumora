@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
         poppins: ["Poppins", "sans-serif"],
+        athena: ["Athena"],
       },
       screens: {
         1050: "1050px", // Custom breakpoint for 1050px

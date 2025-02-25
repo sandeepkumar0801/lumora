@@ -104,11 +104,11 @@ const Homepage = () => {
         <Header startAnimations={isPageLoaderDone} />
 
         <div className="absolute bg-greenTheme w-[26.9%] 450:block hidden h-full  top-0 -z-[10]">
-          <div className="pl-[17.5%] absolute pr-[10%] md:pt-[25%] 450:pt-[55px] pt-[50px]">
-            <h1 className="text-mainText text-[2.5vw]">
+          <div className="pl-[17.5%] absolute pr-[10%] md:pt-[25%] pt-[60px]">
+            <h1 className="text-mainText leading-tight text-[2.5vw]">
               Where vision meets reality and dreams find their address
             </h1>
-            <h2 className="text-white text-[1.3vw]">
+            <h2 className="text-white text-[1.55vw]  font-athena pt-2">
               This isn't just real estate: it's a philosophy.One that asks, "Why
               settle for ordinary when you can live extraordinary?"
             </h2>
@@ -125,14 +125,14 @@ const Homepage = () => {
         </div>
 
         <Image
-        width={450} height={600} layout="responsive"
-          src="https://images.unsplash.com/photo-1739999373818-ab59c32b23c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D"
+        width={450} height={550} layout="responsive"
+          src="/header_mob.jpg"
           alt="home"
           className="w-full 450:hidden block ml-auto h-full object-cover"
         />
       </div>
-      <div className="tagline text-center bg-creamBg h-full text-themeText pb-4 pt-[30%] 450:py-6 lg:text-3xl sm:text-2xl relative 450:text-xl text-lg font-cinzel">
-        <div className="w-[85%] absolute left-[50%] 450:hidden -translate-x-[50%] -top-[50%] h-full m-auto top-0 z-[10]">
+      <div className="tagline text-center bg-creamBg h-full text-themeText pb-4 pt-[27.5%] 450:py-6 lg:text-3xl sm:text-2xl relative 450:text-xl text-lg font-cinzel">
+        <div className="w-[85%] absolute left-[50%] 450:hidden -translate-x-[50%] top-[-50%] h-full m-auto top-0 z-[10]">
           <div className="leading-relaxed p-4 bg-greenTheme">
             <h1 className="text-mainText text-[4.5vw]">
               Where vision meets reality and dreams find their address

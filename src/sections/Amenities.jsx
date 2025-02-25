@@ -5,137 +5,77 @@ const sections1 = [
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Majestic Mountains",
+      "/Adventure_sport.jpg",
+    alt: "Adventure_Sports_img",
+  },
+  {
+    theme: "bg-greenTheme font-semibold text-white",
+    image:
+      "",
+    text: "Adventure Sports",
+  },
+  {
+    theme: "bg-creamBg font-semibold",
+    image:
+      "",
+    text: "Business Lounge",
   },
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Sunflower Fields",
+      "/business_Lounge.jpg",
+    alt: "Business_Lounge_Img",
   },
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Dense Jungle",
+      "/Clubhouse.jpg",
+    alt: "Clubhouse_Img",
   },
   {
-    theme: "bg-greenTheme text-white",
+    theme: "bg-greenTheme font-semibold text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Flowing River",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Autumn Leaves",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Dark Cave",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Rose Garden",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Tulip Fields",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Wild Savanna",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Blue Lagoon",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Cosmic Space",
-  },
-  {
-    theme: "bg-greenTheme text-black",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Tropical Island",
+      "",
+    text: "Clubhouse",
   },
 ];
 
 const sections2 = [
   {
-    theme: "bg-creamBgcreamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Majestic Mountains",
+    theme: "bg-greenTheme text-white",
+    image:
+      "/Hotel_Villas.jpg",
+    alt: "Hotel_Villas_img",
   },
   {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Sunflower Fields",
+    theme: "bg-greenTheme font-semibold text-white",
+    image:
+      "",
+    text: "Hotel Villas",
   },
   {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Dense Jungle",
+    theme: "bg-creamBg font-semibold",
+    image:
+      "",
+    text: "Pet Space",
   },
   {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Flowing River",
+    theme: "bg-greenTheme text-white",
+    image:
+      "/Pet_Spaces.jpg",
+    alt: "Pet_space_img",
   },
   {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Autumn Leaves",
+    theme: "bg-greenTheme text-white",
+    image:
+      "/Resort_Shopping.jpg",
+    alt: "Resort_Shopping_Img",
   },
   {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Dark Cave",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Rose Garden",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Tulip Fields",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Wild Savanna",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Blue Lagoon",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Cosmic Space",
-  },
-  {
-    theme: "bg-creamBg text-black",
-    image: "https://images.unsplash.com/photo-1739312025707-bbf6765973b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1Mnx8fGVufDB8fHx8fA%3D%3D",
-    text: "Tropical Island",
+    theme: "bg-greenTheme font-semibold text-white",
+    image:
+      "",
+    text: "Resort Shopping",
   },
 ];
 
@@ -143,74 +83,38 @@ const sections3 = [
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Majestic Mountains",
+      "/Infinity_pool.jpg",
+    alt: "Infinity_Pool_Img",
+  },
+  {
+    theme: "bg-greenTheme font-semibold text-white",
+    image:
+      "",
+    text: "Infinity Pool",
+  },
+  {
+    theme: "bg-creamBg font-semibold",
+    image:
+      "",
+    text: "Gym",
   },
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Sunflower Fields",
+      "/Gym.jpg",
+    alt: "Gym_Img",
   },
   {
     theme: "bg-greenTheme text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Dense Jungle",
+      "/Green_Landscapes.jpg",
+    alt: "Green_Landscapes_Img",
   },
   {
-    theme: "bg-greenTheme text-white",
+    theme: "bg-greenTheme font-semibold text-white",
     image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Flowing River",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Autumn Leaves",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Dark Cave",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Rose Garden",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Tulip Fields",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Wild Savanna",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Blue Lagoon",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Cosmic Space",
-  },
-  {
-    theme: "bg-greenTheme text-black",
-    image:
-      "https://images.unsplash.com/photo-1739993655680-4b7050ed2896?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
-    text: "Tropical Island",
+      "",
+    text: "Green Landscapes",
   },
 ];
 
@@ -225,7 +129,7 @@ const GridSection = ({ sections }) => {
                 width={150}
                 height={160}
                 src={section.image}
-                alt="Section Image"
+                alt={section.alt}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -246,7 +150,7 @@ const Amenities = () => {
   return (
     <section className="pt-12">
       <h1 className="text-4xl text-themeText text-center">Amenities</h1>
-      <h3 className="text-lg pt-2 pb-8 font-semibold text-center">
+      <h3 className="text-lg pt-2 pb-8 font-athena font-semibold text-center">
         Dwell into a remarkable location
       </h3>
 
