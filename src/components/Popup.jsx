@@ -1,25 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const EnquiryFormPopup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      {/* Popup Container */}
       <div className="bg-white rounded-lg shadow-lg w-full max-w-md mx-4 p-6 relative transform transition-all duration-300 scale-95 opacity-0 animate-fadeIn">
-        {/* Close Button */}
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
         >
           &times;
         </button>
-
-        {/* Form Heading */}
         <h2 className="text-2xl font-bold text-green-600 mb-6">Enquiry Form</h2>
-
-        {/* Form Fields */}
         <form className="space-y-4">
+          {/* Form Fields */}
           <div>
             <label className="block text-sm font-medium text-gray-700">Name</label>
             <input
@@ -52,8 +47,6 @@ const EnquiryFormPopup = ({ isOpen, onClose }) => {
               placeholder="Enter your message"
             ></textarea>
           </div>
-
-          {/* Submit Button */}
           <button
             type="submit"
             className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-all duration-300"

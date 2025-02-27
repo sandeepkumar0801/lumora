@@ -16,7 +16,7 @@ const RedifineLuxury = () => {
   useEffect(() => {
     gsap.to(logoRef.current, {
       rotation: 360, // Rotate 360 degrees
-      duration: 15,  // Duration of one full rotation (seconds)
+      duration: 165,  // Duration of one full rotation (seconds)
       repeat: -1,    // Infinite rotation
       ease: "linear" // Smooth continuous rotation
     });

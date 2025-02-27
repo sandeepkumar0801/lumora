@@ -1,9 +1,10 @@
 "use client"; // Only needed if using Next.js App Router
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Link from "next/link";
+import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 
 const Header = ({ lgScreen }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -68,7 +69,7 @@ const Header = ({ lgScreen }) => {
       gsap.to(menuRef.current, { x: "100%", duration: 0.3, ease: "power3.in" });
     }
   }, [menuOpen]);
-
+  const { openPopup } = useContext(EnquiryFormContext);
   return (
     <header ref={headerRef} className={`absolute z-[40] w-full ${lgScreen} right-0`}>
       <nav className="relative">
@@ -77,7 +78,7 @@ const Header = ({ lgScreen }) => {
           <li className="hidden lg:block">
             <Link href="/about-us">About Us</Link>
           </li>
-          <li ref={projectLink} className="hidden cursor-pointer lg:block">
+          <li onClick={openPopup} className="hidden cursor-pointer lg:block">
             Projects
           </li>
           <li ref={navLogoRef}>

@@ -92,6 +92,7 @@ const Homepage = () => {
       icon: "/Zen-garden-icon.png",
     },
   ];
+  
   return (
     <section className="w-full">
       <PageLoader />
