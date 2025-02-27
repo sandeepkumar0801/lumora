@@ -101,7 +101,7 @@ const Homepage = () => {
     <section className="w-full">
       <PageLoader onAnimationComplete={handlePageLoaderComplete} />
       <div className="w-full relative">
-        <Header startAnimations={isPageLoaderDone} />
+        <Header lgScreen="w-[77.5%]" startAnimations={isPageLoaderDone} />
 
         <div className="absolute bg-greenTheme w-[26.9%] 450:block hidden h-full  top-0 -z-[10]">
           <div className="pl-[17.5%] absolute pr-[10%] md:pt-[25%] pt-[60px]">

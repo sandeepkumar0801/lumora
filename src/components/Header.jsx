@@ -3,8 +3,9 @@
 import { useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
+import Link from "next/link";
 
-const Header = ({ startAnimations }) => {
+const Header = ({ startAnimations=true, lgScreen }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const menuItemsRef = useRef([]);
@@ -69,9 +70,12 @@ const Header = ({ startAnimations }) => {
   }, [menuOpen]);
 
   return (
-    <header ref={headerRef} className="absolute w-[100%] invisible lg:w-[77.5%] right-0">
+    <header
+      ref={headerRef}
+      className={`absolute w-full invisible lg:${lgScreen} right-0`}
+    >
       <nav className="relative">
-        <ul className="flex font-cinzel text-white px-6 lg:px-10 450:py-6 py-4 items-center justify-between lg:justify-evenly">
+        <ul className="flex font-cinzel text-white px-6 lg:px-10 450:py-4 py-4 items-center justify-between lg:justify-evenly">
           {/* Logo */}
           {["About Us", "Projects"].map((item, index) => (
             <li
@@ -79,13 +83,19 @@ const Header = ({ startAnimations }) => {
               ref={(el) => (firstNavRefs.current[index] = el)}
               className="hidden lg:block"
             >
-              <a href="">{item}</a>
+              <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>
+                {item}
+              </Link>
             </li>
           ))}
           <li ref={navLogoRef}>
-            <a href="/">
-              <img className="w-[12.5vw] lg:w-44" src="/logo.png" alt="logo" />
-            </a>
+            <Link href="/">
+              <img
+                className="w-[27.5vw] 450:w-[15.5vw] sm:w-[12.5vw] lg:w-44"
+                src="/logo.png"
+                alt="logo"
+              />
+            </Link>
           </li>
           {["Amenities", "Contact Us", "Gallery"].map((item, index) => (
             <li
@@ -93,13 +103,13 @@ const Header = ({ startAnimations }) => {
               ref={(el) => (lastNavRefs.current[index] = el)}
               className="hidden lg:block"
             >
-              <a href="">{item}</a>
+              <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>{item}</Link>
             </li>
           ))}
           {/* Menu Icon (Only for Small Screens) */}
           <li className="lg:hidden">
             <button onClick={() => setMenuOpen(true)}>
-              <FaBars className="text-2xl" />
+              <FaBars className="text-2xl text-mainText" />
             </button>
           </li>
         </ul>
@@ -107,25 +117,25 @@ const Header = ({ startAnimations }) => {
         {/* Sidebar Menu */}
         <div
           ref={menuRef}
-          className="fixed z-50 top-0 right-0 h-screen w-[100%] 450:w-[40%] bg-black lg:hidden text-white transform translate-x-full"
+          className="fixed z-50 top-0 right-0 h-screen w-[100%] 450:w-[40%] bg-greenTheme lg:hidden text-white transform translate-x-full"
         >
           {/* Close Button */}
           <button
             onClick={() => setMenuOpen(false)}
             className="absolute top-4 right-6 text-2xl"
           >
-            <FaTimes />
+            <FaTimes className="text-mainText" />
           </button>
 
           {/* Menu Items */}
-          <ul className="flex flex-col items-center justify-center h-full space-y-6 text-xl">
+          <ul className="flex flex-col text-mainText items-center justify-center h-full space-y-6 text-xl">
             {["About us", "Projects", "Amenities", "Contact Us", "Gallery"].map(
               (item, index) => (
                 <li
                   key={index}
                   ref={(el) => (menuItemsRef.current[index] = el)}
                 >
-                  <a href="">{item}</a>
+                  <Link href="">{item}</Link>
                 </li>
               )
             )}
