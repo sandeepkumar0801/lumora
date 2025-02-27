@@ -1,9 +1,10 @@
+import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useContext } from "react";
 
 const Footer = () => {
-  const footerProjectLink = useRef(null);
+    const { openPopup } = useContext(EnquiryFormContext);
   return (
     <footer className="relative bg-greenTheme pt-12 w-full px-8 ">
       
@@ -38,7 +39,7 @@ const Footer = () => {
           <li>
             <Link href="/about-us">Abouts us</Link>
           </li>
-          <li ref={footerProjectLink} className="cursor-pointer">Projects
+          <li onClick={openPopup} className="cursor-pointer">Projects
           </li>
           <li>
             <Link href="/amenities">Amenities</Link>
@@ -54,7 +55,7 @@ const Footer = () => {
         <div className=" sm:w-[33%] md:w-[28%] w-full text-white">
         <p className="font-cinzel sm:text-center md:text-[2vw] sm:text-[3vw] 450:text-[5vw] text-[7vw]">Address</p>
         <p className="sm:text-center text-start">
-        Lumora Estates Private Limited 8th Floor, KR Signature Tower, Sector 135, Noida, Uttar Pradesh 201304
+        Lumora Estates Private Limited 8th Floor, <br /> KR Signature Tower, Sector 135, <br />Noida, Uttar Pradesh 201304
         </p>
         <p className="sm:text-center py-2">
         Info@lumoraestates.com

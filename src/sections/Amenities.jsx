@@ -5,99 +5,99 @@ import Link from "next/link";
 const sections1 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/Adventure_sport.jpg",
-    alt: "Adventure_Sports_img",
+    image: "/Green_Clean.png",
+    alt: "amenities_img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Adventure Sports",
+    text: "Green and clean environment",
   },
   {
     theme: "bg-creamBg font-semibold",
     image: "",
-    text: "Business Lounge",
+    text: "Trekking near water bodies",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/business_Lounge.jpg",
-    alt: "Business_Lounge_Img",
+    image: "/Trekking.png",
+    alt: "amenities_img",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Clubhouse.jpg",
-    alt: "Clubhouse_Img",
+    image: "/scenic_views.png",
+    alt: "amenities_img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Clubhouse",
+    text: "Scenic Views",
   },
 ];
 
 const sections2 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/Hotel_Villas.jpg",
-    alt: "Hotel_Villas_img",
+    image: "/Basketball_court.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Hotel Villas",
+    text: "Basketball Court",
   },
   {
     theme: "bg-creamBg font-semibold",
     image: "",
-    text: "Pet Space",
+    text: "Fruit Orchid",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Pet_Spaces.jpg",
-    alt: "Pet_space_img",
+    image: "/Fruit_Orchid.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Resort_Shopping.jpg",
-    alt: "Resort_Shopping_Img",
+    image: "/Lazy_river.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Resort Shopping",
+    text: "Lazy River",
   },
 ];
 
 const sections3 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/Infinity_pool.jpg",
-    alt: "Infinity_Pool_Img",
+    image: "/pool_deck.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Infinity Pool",
+    text: "Pool Deck",
   },
   {
     theme: "bg-creamBg font-semibold",
     image: "",
-    text: "Gym",
+    text: "Tree Climbing",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Gym.jpg",
-    alt: "Gym_Img",
+    image: "/Tree_Climbing.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Green_Landscapes.jpg",
-    alt: "Green_Landscapes_Img",
+    image: "/Lawn.png",
+    alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Green Landscapes",
+    text: "Lawn",
   },
 ];
 

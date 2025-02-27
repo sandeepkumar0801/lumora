@@ -71,7 +71,10 @@ const Header = ({ lgScreen }) => {
   }, [menuOpen]);
   const { openPopup } = useContext(EnquiryFormContext);
   return (
-    <header ref={headerRef} className={`absolute z-[40] w-full ${lgScreen} right-0`}>
+    <header
+      ref={headerRef}
+      className={`absolute z-[40] w-full ${lgScreen} right-0`}
+    >
       <nav className="relative">
         <ul className="flex font-cinzel text-white px-6 lg:px-10 450:py-4 py-4 items-center justify-between lg:justify-evenly">
           {/* Logo */}
@@ -127,9 +130,10 @@ const Header = ({ lgScreen }) => {
             {["About us", "Projects", "Amenities", "Contact Us", "Gallery"].map(
               (item, index) => (
                 <li
-                className="cursor-pointer"
+                  className="cursor-pointer"
                   key={index}
                   ref={(el) => (menuItemsRef.current[index] = el)}
+                  onClick={item === "Projects" ? openPopup : undefined} // Add onClick for "Projects"
                 >
                   {item === "Projects" ? (
                     item // Render just the text without a Link
