@@ -103,7 +103,7 @@ const Amenities = () => {
 
   return (
     <>
-      <Header lgScreen="w-full" />
+      <Header lgScreen="lg:w-full" />
       <section className="bg-[#0e291a] pb-12 pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}

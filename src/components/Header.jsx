@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Link from "next/link";
 
-const Header = ({ startAnimations=true, lgScreen }) => {
+const Header = ({ lgScreen }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const menuItemsRef = useRef([]);
@@ -14,9 +14,9 @@ const Header = ({ startAnimations=true, lgScreen }) => {
   const lastNavRefs = useRef([]); // Remaining items
   const navLogoRef = useRef(null);
   const headerRef = useRef(null);
+  const projectLink = useRef([]);
 
-  useEffect(() => {
-    if (!startAnimations) return;
+  /* useEffect(() => {
     const tl = gsap.timeline();
 
     tl.set(headerRef.current, { visibility: "visible", opacity: 1 });
@@ -47,7 +47,7 @@ const Header = ({ startAnimations=true, lgScreen }) => {
       });
 
     return () => tl.kill();
-  }, [startAnimations]);
+  }, []); */
 
   useEffect(() => {
     if (menuOpen) {
@@ -70,24 +70,16 @@ const Header = ({ startAnimations=true, lgScreen }) => {
   }, [menuOpen]);
 
   return (
-    <header
-      ref={headerRef}
-      className={`absolute w-full invisible lg:${lgScreen} right-0`}
-    >
+    <header ref={headerRef} className={`absolute z-[40] w-full ${lgScreen} right-0`}>
       <nav className="relative">
         <ul className="flex font-cinzel text-white px-6 lg:px-10 450:py-4 py-4 items-center justify-between lg:justify-evenly">
           {/* Logo */}
-          {["About Us", "Projects"].map((item, index) => (
-            <li
-              key={index}
-              ref={(el) => (firstNavRefs.current[index] = el)}
-              className="hidden lg:block"
-            >
-              <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>
-                {item}
-              </Link>
-            </li>
-          ))}
+          <li className="hidden lg:block">
+            <Link href="/about-us">About Us</Link>
+          </li>
+          <li ref={projectLink} className="hidden cursor-pointer lg:block">
+            Projects
+          </li>
           <li ref={navLogoRef}>
             <Link href="/">
               <img
@@ -103,7 +95,9 @@ const Header = ({ startAnimations=true, lgScreen }) => {
               ref={(el) => (lastNavRefs.current[index] = el)}
               className="hidden lg:block"
             >
-              <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>{item}</Link>
+              <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>
+                {item}
+              </Link>
             </li>
           ))}
           {/* Menu Icon (Only for Small Screens) */}
@@ -132,10 +126,17 @@ const Header = ({ startAnimations=true, lgScreen }) => {
             {["About us", "Projects", "Amenities", "Contact Us", "Gallery"].map(
               (item, index) => (
                 <li
+                className="cursor-pointer"
                   key={index}
                   ref={(el) => (menuItemsRef.current[index] = el)}
                 >
-                  <Link href="">{item}</Link>
+                  {item === "Projects" ? (
+                    item // Render just the text without a Link
+                  ) : (
+                    <Link href={`/${item.replace(/\s+/g, "-").toLowerCase()}`}>
+                      {item}
+                    </Link>
+                  )}
                 </li>
               )
             )}

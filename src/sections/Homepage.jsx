@@ -92,16 +92,11 @@ const Homepage = () => {
       icon: "/Zen-garden-icon.png",
     },
   ];
-  const [isPageLoaderDone, setIsPageLoaderDone] = useState(false);
-  const handlePageLoaderComplete = () => {
-    setIsPageLoaderDone(true); // Signal that PageLoader animations are done
-  };
-
   return (
     <section className="w-full">
-      <PageLoader onAnimationComplete={handlePageLoaderComplete} />
+      <PageLoader />
       <div className="w-full relative">
-        <Header lgScreen="w-[77.5%]" startAnimations={isPageLoaderDone} />
+        <Header lgScreen="lg:w-[77.5%]" />
 
         <div className="absolute bg-greenTheme w-[26.9%] 450:block hidden h-full  top-0 -z-[10]">
           <div className="pl-[17.5%] absolute pr-[10%] md:pt-[25%] pt-[60px]">

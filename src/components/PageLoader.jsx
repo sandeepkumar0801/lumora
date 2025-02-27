@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-const PageLoader = ({ onAnimationComplete }) => {
+const PageLoader = () => {
   const h1Ref = useRef(null);
   const h3Ref = useRef(null);
   const containerRef = useRef(null);
@@ -37,10 +37,9 @@ const PageLoader = ({ onAnimationComplete }) => {
       {
         opacity: 0,
         y: 20,
-        duration: 1.5, // Increased duration for <h3>
+        duration: 1, // Increased duration for <h3>
         ease: "power3.out",
-      },
-      "+=0.5" // Add a slight delay after the <h1> animation
+      } // Add a slight delay after the <h1> animation
     );
 
     // Animate the container to move up
@@ -50,17 +49,15 @@ const PageLoader = ({ onAnimationComplete }) => {
         y: "-100%",
         duration: 1,
         ease: "power3.inOut",
-      },
-      "+=0.5" // Add a slight delay after the <h3> animation
+      } // Add a slight delay after the <h3> animation
     );
 
-    // Call the callback when the PageLoader animations are complete
-    tl.call(onAnimationComplete);
-  }, [onAnimationComplete]);
+    return () => tl.kill();
+  }, []);
 
   return (
     <div ref={containerRef} className="w-full h-screen fixed bg-greenTheme z-[50]">
-      <div className="flex flex-col w-full h-full text-[#cb9967] leading-[30px] 450:leading-[70px] justify-center items-center">
+      <div className="flex flex-col w-full h-full text-[#cb9967] leading-[30px] xl:leading-[50px] 450:leading-[70px] justify-center items-center">
         <h1 ref={h1Ref} className="450:text-[9vw] text-[13vw]">
           Lumora
         </h1>

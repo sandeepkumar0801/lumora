@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 
 const Footer = () => {
+  const footerProjectLink = useRef(null);
   return (
     <footer className="relative bg-greenTheme pt-12 w-full px-8 ">
+      
       <Image
         layout="fill"
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -13,6 +15,7 @@ const Footer = () => {
       />
       <div className="relative">
       <div className="logo pb-4 w-[15%] min-w-[150px]">
+      <Link href="/">
         <Image
           className="w-full h-auto"
           src="/logo.png"
@@ -20,6 +23,7 @@ const Footer = () => {
           width={325}
           height={90}
         />
+      </Link>
       </div>
       <div className="w-full flex gap-[25px] flex-wrap sm:justify-around justify-between sm:px-8">
         <p className=" sm:w-[33%] md:w-[28%] w-full text-white">
@@ -34,8 +38,7 @@ const Footer = () => {
           <li>
             <Link href="/about-us">Abouts us</Link>
           </li>
-          <li>
-            <Link href="/projects">Projects</Link>
+          <li ref={footerProjectLink} className="cursor-pointer">Projects
           </li>
           <li>
             <Link href="/amenities">Amenities</Link>

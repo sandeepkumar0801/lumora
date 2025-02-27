@@ -1,41 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 
 // Each grid array should contain 12 objects with unique data
 const sections1 = [
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Adventure_sport.jpg",
+    image: "/Adventure_sport.jpg",
     alt: "Adventure_Sports_img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Adventure Sports",
   },
   {
     theme: "bg-creamBg font-semibold",
-    image:
-      "",
+    image: "",
     text: "Business Lounge",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/business_Lounge.jpg",
+    image: "/business_Lounge.jpg",
     alt: "Business_Lounge_Img",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Clubhouse.jpg",
+    image: "/Clubhouse.jpg",
     alt: "Clubhouse_Img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Clubhouse",
   },
 ];
@@ -43,38 +38,32 @@ const sections1 = [
 const sections2 = [
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Hotel_Villas.jpg",
+    image: "/Hotel_Villas.jpg",
     alt: "Hotel_Villas_img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Hotel Villas",
   },
   {
     theme: "bg-creamBg font-semibold",
-    image:
-      "",
+    image: "",
     text: "Pet Space",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Pet_Spaces.jpg",
+    image: "/Pet_Spaces.jpg",
     alt: "Pet_space_img",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Resort_Shopping.jpg",
+    image: "/Resort_Shopping.jpg",
     alt: "Resort_Shopping_Img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Resort Shopping",
   },
 ];
@@ -82,38 +71,32 @@ const sections2 = [
 const sections3 = [
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Infinity_pool.jpg",
+    image: "/Infinity_pool.jpg",
     alt: "Infinity_Pool_Img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Infinity Pool",
   },
   {
     theme: "bg-creamBg font-semibold",
-    image:
-      "",
+    image: "",
     text: "Gym",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Gym.jpg",
+    image: "/Gym.jpg",
     alt: "Gym_Img",
   },
   {
     theme: "bg-greenTheme text-white",
-    image:
-      "/Green_Landscapes.jpg",
+    image: "/Green_Landscapes.jpg",
     alt: "Green_Landscapes_Img",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
-    image:
-      "",
+    image: "",
     text: "Green Landscapes",
   },
 ];
@@ -173,6 +156,14 @@ const Amenities = () => {
           <GridSection sections={sections1} />
         </div>
       </div>
+      <h2 className="text-center pt-8">
+        <Link
+          href="/amenities"
+          className="px-4 py-2 text-white bg-greenTheme text-lg hover:bg-mainText transition-all duration-300 hover:text-black"
+        >
+          View More
+        </Link>
+      </h2>
     </section>
   );
 };
