@@ -90,7 +90,7 @@ const AboutUs = () => {
               <div className="flex space-x-4">
                 <button
                   onClick={openPopup}
-                  className="px-6 py-3 bg-greenTheme text-mainText hover:bg-[#1a3d2b] font-semibold rounded-md transition-colors"
+                  className="px-6 py-3 bg-white text-greenTheme font-poppins rounded-md transition-colors"
                 >
                   Learn More
                 </button>
@@ -107,7 +107,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold text-center text-greenTheme">
               Our Mission
             </h2>
-            <p className="text-gray-700 text-center">
+            <p className="text-gray-700">
               Our mission is to set the benchmark for excellence in real estate
               by designing spaces that blend luxury, functionality, and
               environmental stewardship. We are committed to delivering top-tier
@@ -121,7 +121,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold text-center text-greenTheme">
               Our Vision
             </h2>
-            <p className="text-gray-700 text-center">
+            <p className="text-gray-700">
               To become a recognized leader in the real estate sector by setting
               new standards for quality and innovation, while building lasting
               relationships with clients and communities.
@@ -136,24 +136,24 @@ const AboutUs = () => {
             <h2 className="text-3xl font-bold text-center text-greenTheme">
               Core Values
             </h2>
-            <ul className="space-y-4 text-gray-700 font-athena">
-              <li className="font-athena">
+            <ul className="space-y-4 text-gray-700 font-poppins">
+              <li className="font-poppins">
                 <strong>Customer Centricity:</strong> Our customers are at the
                 heart of everything we do.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Innovation:</strong> We embrace creativity to stay ahead
                 of the curve.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Integrity:</strong> Honesty and transparency define our
                 work ethic.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Sustainability:</strong> We are dedicated to building a
                 greener, more sustainable future.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Teamwork:</strong> Collaboration is key to our success.
               </li>
             </ul>
@@ -165,24 +165,24 @@ const AboutUs = () => {
               Our Expertise
             </h2>
             <ul className="space-y-4 text-gray-700">
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Eco-Luxury Retreats:</strong> Sustainable, boutique
                 properties in scenic locations.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Smart City Development:</strong> Future-ready urban
                 communities with IoT and green solutions.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Pop-Up Spaces:</strong> Short-term rentals for events
                 and retail experiments.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Wellness Real Estate:</strong> Homes designed for
                 wellness, featuring meditation spaces, air purifiers, and
                 biophilic designs.
               </li>
-              <li className="font-athena">
+              <li className="font-poppins">
                 <strong>Adaptive Reuse:</strong> Transforming old buildings into
                 modern, vibrant spaces.
               </li>
