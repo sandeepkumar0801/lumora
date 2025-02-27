@@ -81,16 +81,16 @@ const AboutUs = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
     {/* Mission */}
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold text-greenTheme">Our Mission</h2>
-      <p className="text-gray-700">
+      <h2 className="text-3xl font-bold text-center text-greenTheme">Our Mission</h2>
+      <p className="text-gray-700 text-center">
         Our mission is to set the benchmark for excellence in real estate by designing spaces that blend luxury, functionality, and environmental stewardship. We are committed to delivering top-tier real estate solutions and embracing cutting-edge technology to make a meaningful difference.
       </p>
     </div>
 
     {/* Vision */}
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold text-greenTheme">Our Vision</h2>
-      <p className="text-gray-700">
+      <h2 className="text-3xl font-bold text-center text-greenTheme">Our Vision</h2>
+      <p className="text-gray-700 text-center">
         To become a recognized leader in the real estate sector by setting new standards for quality and innovation, while building lasting relationships with clients and communities.
       </p>
     </div>
@@ -100,7 +100,7 @@ const AboutUs = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Core Values */}
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold text-greenTheme">Core Values</h2>
+      <h2 className="text-3xl font-bold text-center text-greenTheme">Core Values</h2>
       <ul className="space-y-4 text-gray-700">
         <li>
           <strong>Customer Centricity:</strong> Our customers are at the heart of everything we do.
@@ -122,7 +122,7 @@ const AboutUs = () => {
 
     {/* Expertise */}
     <div className="space-y-4">
-      <h2 className="text-3xl font-bold text-greenTheme">Our Expertise</h2>
+      <h2 className="text-3xl font-bold text-center text-greenTheme">Our Expertise</h2>
       <ul className="space-y-4 text-gray-700">
         <li>
           <strong>Eco-Luxury Retreats:</strong> Sustainable, boutique properties in scenic locations.
