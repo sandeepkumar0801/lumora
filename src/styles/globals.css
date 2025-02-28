@@ -40,3 +40,14 @@ h1, h2, h3, h4, h5, h6, li{
 .animate-scale-infinite {
   animation: scaleInfinite 15s ease-in-out infinite;
 }
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.5s ease-out;
+}

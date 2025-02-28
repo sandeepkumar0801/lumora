@@ -6,50 +6,34 @@ import gsap from "gsap";
 import Link from "next/link";
 import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 
-const Header = ({ lgScreen }) => {
+const Header = ({ lgScreen, bgHeader }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false); // State to track if header is fixed
   const menuRef = useRef(null);
   const menuItemsRef = useRef([]);
-
-  const firstNavRefs = useRef([]); // About Us & Projects
   const lastNavRefs = useRef([]); // Remaining items
   const navLogoRef = useRef(null);
   const headerRef = useRef(null);
-  const projectLink = useRef([]);
 
-  /* useEffect(() => {
-    const tl = gsap.timeline();
 
-    tl.set(headerRef.current, { visibility: "visible", opacity: 1 });
-    // Step 2: Animate Logo First
-    tl.from(navLogoRef.current, {
-      duration: 1.2,
-      y: -50,
-      opacity: 0,
-      ease: "power2.out",
-    })
+  const handleScroll = () => {
+    // debugger
+    const win = window;
+    console.log(win);
+    
+    if (window.scrollY > 0.5) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  };
+  // Scroll event handler
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-      // Step 3: Animate "About Us" & "Projects"
-      .from(firstNavRefs.current, {
-        duration: 1,
-        y: -50,
-        opacity: 0,
-        stagger: 0.3,
-        ease: "power2.out",
-      })
-
-      // Step 4: Animate remaining items ("Amenities", "Contact Us", "Gallery")
-      .from(lastNavRefs.current, {
-        duration: 1,
-        y: -50,
-        opacity: 0,
-        stagger: 0.3,
-        ease: "power2.out",
-      });
-
-    return () => tl.kill();
-  }, []); */
-
+  // GSAP animation for menu
   useEffect(() => {
     if (menuOpen) {
       gsap.to(menuRef.current, { x: 0, duration: 0.5, ease: "power3.out" });
@@ -69,11 +53,15 @@ const Header = ({ lgScreen }) => {
       gsap.to(menuRef.current, { x: "100%", duration: 0.3, ease: "power3.in" });
     }
   }, [menuOpen]);
+
   const { openPopup } = useContext(EnquiryFormContext);
+
   return (
     <header
       ref={headerRef}
-      className={`absolute z-[40] w-full ${lgScreen} right-0`}
+      className={` z-[40] w-full ${bgHeader === undefined ? "" : bgHeader} ${lgScreen} right-0 ${
+        isFixed ? "fixed top-0 bg-greenTheme animate-slideDown" : "absolute"
+      }`}
     >
       <nav className="relative">
         <ul className="flex font-cinzel text-white px-6 lg:px-10 450:py-4 py-4 items-center justify-between lg:justify-evenly">

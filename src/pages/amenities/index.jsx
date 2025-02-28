@@ -5,100 +5,51 @@ import Image from "next/image";
 const Amenities = () => {
   const amenities = [
     {
-      title: "Swimming Pool",
+      title: "Green and Clean Enviorment",
       image:
-        "https://images.unsplash.com/photo-1740338247288-131cc995f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D",
+        "/Green_Clean.png",
     },
     {
-      title: "Fitness Center",
+      title: "Scenic Views",
       image:
-        "https://images.unsplash.com/photo-1740386072835-938733c974e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMTl8fHxlbnwwfHx8fHw%3D",
+        "/scenic_views.png",
     },
     {
-      title: "Rooftop Lounge",
+      title: "Trekking",
       image:
-        "https://images.unsplash.com/photo-1740341459122-cc16499650bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMjR8fHxlbnwwfHx8fHw%3D",
+        "/Trekking.png",
     },
     {
-      title: "Parking Space",
+      title: "Tree Climbing",
       image:
-        "https://images.unsplash.com/photo-1737467016100-68cd7759d93c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzF8fHxlbnwwfHx8fHw%3D",
+        "/Tree_Climbing.png",
     },
     {
-      title: "24/7 Security",
+      title: "Pool Deck",
       image:
-        "https://images.unsplash.com/photo-1738168362059-44a0b8a80b39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzZ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Kids Play Area",
-      image:
-        "https://plus.unsplash.com/premium_photo-1700486006740-6020a71f2d2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Community Garden",
-      image:
-        "https://images.unsplash.com/photo-1734692817970-0dde7ba300e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDJ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Co-Working Space",
-      image:
-        "https://images.unsplash.com/photo-1740137660835-8a755519b9ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTh8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Pet-Friendly Zone",
-      image:
-        "https://images.unsplash.com/photo-1740166260067-9338269b9227?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNjN8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Yoga Studio",
-      image:
-        "https://images.unsplash.com/photo-1734692817970-0dde7ba300e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDJ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Café & Bistro",
-      image:
-        "https://plus.unsplash.com/premium_photo-1700486006740-6020a71f2d2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Concierge Service",
-      image:
-        "https://images.unsplash.com/photo-1740338247288-131cc995f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Movie Theater",
-      image:
-        "https://plus.unsplash.com/premium_photo-1700486006740-6020a71f2d2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMzd8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "BBQ Area",
-      image:
-        "https://images.unsplash.com/photo-1740338247288-131cc995f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Spa & Sauna",
-      image:
-        "https://images.unsplash.com/photo-1740338247288-131cc995f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDJ8fHxlbnwwfHx8fHw%3D",
-    },
-    {
-      title: "Tennis Court",
-      image:
-        "https://images.unsplash.com/photo-1740137660835-8a755519b9ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTh8fHxlbnwwfHx8fHw%3D",
+        "/pool_deck.png",
     },
     {
       title: "Basketball Court",
       image:
-        "https://images.unsplash.com/photo-1734692817970-0dde7ba300e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNDJ8fHxlbnwwfHx8fHw%3D",
+        "/Basketball_court.png",
     },
     {
-      title: "Walking Trails",
+      title: "Fruit Orchid",
       image:
-        "https://images.unsplash.com/photo-1740137660835-8a755519b9ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTh8fHxlbnwwfHx8fHw%3D",
+        "/Fruit_Orchid.png",
     },
     {
-      title: "Walking Trails",
+      title: "Lawn",
       image:
-        "https://images.unsplash.com/photo-1740137660835-8a755519b9ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNTh8fHxlbnwwfHx8fHw%3D",
+        "/Lawn.png",
     },
+    {
+      title: "Lazy River",
+      image:
+        "/Lazy_river.png",
+    },
+    
   ];
 
   return (

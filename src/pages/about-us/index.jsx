@@ -8,7 +8,7 @@ const AboutUs = () => {
   const { openPopup } = useContext(EnquiryFormContext);
   return (
     <>
-      <Header lgScreen="lg:w-full" />
+      <Header lgScreen="lg:w-full" bgHeader="bg-greenTheme"/>
       <div className="relative">
         {/* Image */}
         <div className="450:hidden overflow-hidden h-[500px]">
@@ -30,7 +30,7 @@ const AboutUs = () => {
           />
         </div>
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#0e291a] to-transparent opacity-50"></div>
+      
       </div>
       <section className="bg-mainText pt-12 pb-6 sm:px-6 lg:px-8 px-3">
         <div className="max-w-7xl mx-auto">
