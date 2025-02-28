@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 import Footer from "@/sections/Footer";
+import Head from "next/head";
 import Image from "next/image";
 import { useContext } from "react";
 
@@ -8,6 +9,10 @@ const AboutUs = () => {
   const { openPopup } = useContext(EnquiryFormContext);
   return (
     <>
+    <Head>
+        <title>Lumora - About Us</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header lgScreen="lg:w-full" bgHeader="bg-greenTheme"/>
       <div className="relative">
         {/* Image */}

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/sections/Footer";
+import Head from "next/head";
 import Image from "next/image";
 
 const Amenities = () => {
@@ -54,6 +55,10 @@ const Amenities = () => {
 
   return (
     <>
+    <Head>
+        <title>Lumora - Amenities</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header lgScreen="lg:w-full" />
       <section className="bg-[#0e291a] pb-12 pt-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
