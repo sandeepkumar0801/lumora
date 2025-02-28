@@ -7,17 +7,13 @@ const Gallery = () => {
   const images = [
     "/galleryImages/gallery300x320_1.png",
     "/galleryImages/gallery300x380_5.png",
-
     "/galleryImages/gallery300x380_4.png",
     "/galleryImages/gallery300x320_2.png",
-    
     "/galleryImages/gallery300x320_3.png",
-    
-    "/galleryImages/gallery300x320_4.jpg",
-    
-    "/galleryImages/gallery300x320_5.jpg",
     "/galleryImages/gallery300x380_2.jpg",
     "/galleryImages/gallery300x380_1.jpg",
+    "/galleryImages/gallery300x320_4.jpg",
+    
   ];
   return (
     <>

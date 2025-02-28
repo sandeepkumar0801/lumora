@@ -132,10 +132,8 @@ const GridSection = ({ sections }) => {
 const Amenities = () => {
   return (
     <section className="pt-12">
-      <h1 className="text-4xl text-themeText text-center">Amenities</h1>
-      <h3 className="text-lg pt-2 pb-8 font-athena font-semibold text-center">
-        Dwell into a remarkable location
-      </h3>
+      <h1 className="text-4xl text-themeText text-center pb-6">Amenities</h1>
+      
 
       <div className="w-full flex flex-wrap justify-center">
         {/* For large screens (lg and above): 3 parent sections */}

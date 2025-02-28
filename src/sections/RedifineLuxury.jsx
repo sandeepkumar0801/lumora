@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 const RedifineLuxury = () => {
   const paraContent = [
-    "Acres of Resort Living",
+    "Resort Living Spread in Acres",
     "Smart City Development",
     "Wellness Real Estate",
     "Quality and Innovation",
