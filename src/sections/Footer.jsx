@@ -15,7 +15,7 @@ const Footer = () => {
         alt="footer-pattern"
       />
       <div className="relative">
-      <div className="logo pb-4 w-[15%] min-w-[150px]">
+      <div className="logo pb-4 sm:pl-8 w-[15%] min-w-[150px]">
       <Link href="/">
         <Image
           className="w-full h-auto"
@@ -26,8 +26,8 @@ const Footer = () => {
         />
       </Link>
       </div>
-      <div className="w-full flex gap-[25px] flex-wrap sm:justify-around justify-between sm:px-8">
-        <p className=" sm:w-[33%] md:w-[28%] lg:text-[1.25vw] w-full text-white">
+      <div className="w-full flex gap-[25px] flex-wrap sm:justify-around justify-between ">
+        <p className=" sm:w-[33%] md:w-[28%] lg:text-[1.15vw] w-full text-white">
           At Lumora Estates, nature isn't a neighbor; it's family. We seamlessly
           blend luxury with sustainability, creating sanctuaries that offer not
           just Villas but harmony. At Lumora Estates, we've reimagined what it
@@ -35,7 +35,7 @@ const Footer = () => {
         </p>
         
         <ul className="flex flex-col min-w-[150px] text-white gap-3">
-        <li className="md:text-[2vw] 2xl:text-[2.25vw] sm:text-[3vw] 450:text-[5vw] text-[7vw]">Links</li>
+        <li className="md:text-[2vw] 2xl:text-3xl sm:text-[3vw] 450:text-[5vw] text-[7vw]">Links</li>
           <li className="2xl:text-lg">
             <Link href="/about-us">Abouts us</Link>
           </li>
@@ -53,7 +53,7 @@ const Footer = () => {
           
         </ul>
         <div className=" sm:w-[33%] md:w-[28%] w-full text-white">
-        <p className="font-cinzel sm:text-center 2xl:text-[2.25vw] md:text-[2vw] sm:text-[3vw] 450:text-[5vw] text-[7vw]">Address</p>
+        <p className="font-cinzel sm:text-center 2xl:text-3xl md:text-[2vw] sm:text-[3vw] 450:text-[5vw] text-[7vw]">Address</p>
         <p className="sm:text-center text-start 2xl:text-lg">
         Lumora Estates Private Limited 8th Floor, <br /> KR Signature Tower, Sector 135, <br />Noida, Uttar Pradesh 201304
         </p>
@@ -63,7 +63,7 @@ const Footer = () => {
           
         </div>
         <ul className="flex flex-col gap-2 text-white">
-          <li className="md:text-[2vw] sm:text-[3vw] 450:text-[5vw] 2xl:text-[2.25vw] text-[7vw]">Policies</li>
+          <li className="md:text-[2vw] sm:text-[3vw] 450:text-[5vw] 2xl:text-3xl text-[7vw]">Policies</li>
           <li className="2xl:text-lg">Privacy Policy</li>
           <li className="2xl:text-lg">Terms Of Use</li>
         </ul>

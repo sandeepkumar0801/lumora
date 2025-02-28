@@ -5,12 +5,19 @@ import Image from 'next/image';
 
 const Gallery = () => {
   const images = [
-    "/galleryImages/gallery-1.png",
-    "/galleryImages/gallery-6.png",
-    "/galleryImages/gallery-3.png",
-    "/galleryImages/gallery-4.png",
-    "/galleryImages/gallery-5.png",
-    "/galleryImages/gallery-2.png",
+    "/galleryImages/gallery300x320_1.png",
+    "/galleryImages/gallery300x380_5.png",
+
+    "/galleryImages/gallery300x380_4.png",
+    "/galleryImages/gallery300x320_2.png",
+    
+    "/galleryImages/gallery300x320_3.png",
+    
+    "/galleryImages/gallery300x320_4.jpg",
+    
+    "/galleryImages/gallery300x320_5.jpg",
+    "/galleryImages/gallery300x380_2.jpg",
+    "/galleryImages/gallery300x380_1.jpg",
   ];
   return (
     <>
@@ -32,7 +39,7 @@ const Gallery = () => {
         </div>
 
         {/* Masonry Grid Gallery */}
-        <div className="mt-12 columns-1 sm:columns-2 lg:columns-3  gap-6 space-y-6">
+        <div className="mt-12 columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
           {images.map((src, index) => (
             <div
               key={index}

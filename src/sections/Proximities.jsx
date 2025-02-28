@@ -27,7 +27,7 @@ const Proximities = () => {
             <h3 className="text-center sm:text-lg text-sm">Rishikesh</h3>
           </div>
         </div>
-        <div className="lg:w-[24%] w-[50%]  flex flex-col justify-center border-t border-t-1 lg:border-t-0 ">
+        <div className="lg:w-[24%] w-[50%]  flex flex-col border-greenTheme border-solid border-r-1 border-r justify-center border-t border-t-1 lg:border-t-0 ">
           <div className="py-4">
             <p className="text-center sm:text-lg text-sm">2 Hours away from</p>
             <h3 className="text-center sm:text-lg text-sm">Saharanpur</h3>
@@ -37,16 +37,16 @@ const Proximities = () => {
             <h3 className="text-center sm:text-lg text-sm">Teri Lake</h3>
           </div>
         </div>
-        {/* <div className="lg:w-[24%] w-[50%] border-t border-t-1 border-greenTheme border-solid lg:border-t-0 flex flex-col justify-center">
+        <div className="lg:w-[24%] w-[50%] border-t border-t-1 border-greenTheme border-solid lg:border-t-0 flex flex-col justify-center">
           <div className="py-4">
-            <p className="text-center sm:text-lg text-sm">2.5 Hours away from</p>
-            <h3 className="text-center sm:text-lg text-sm">Delhi</h3>
+            <p className="text-center sm:text-lg text-sm">4 Hours away from</p>
+            <h3 className="text-center sm:text-lg text-sm">Sonipat</h3>
           </div>
           <div className="py-4 border-greenTheme border-solid border-t">
-            <p className="text-center sm:text-lg text-sm">2.5 Hours away from</p>
-            <h3 className="text-center sm:text-lg text-sm">Delhi</h3>
+            <p className="text-center sm:text-lg text-sm">3.5 Hours away from</p>
+            <h3 className="text-center sm:text-lg text-sm">Chandigarh</h3>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )
