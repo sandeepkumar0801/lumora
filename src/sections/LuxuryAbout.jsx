@@ -1,7 +1,9 @@
+import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 
 const LuxuryAbout = () => {
+  const { openPopup } = useContext(EnquiryFormContext);
   return (
     <>
       <section className="md:py-16 py-8">
@@ -44,7 +46,7 @@ const LuxuryAbout = () => {
           Getting started on your home-buying journey can be overwhelming & can
           deter you from taking the first step
         </p>
-        <button className="py-2 px-5 bg-white font-cinzel sm:text-xl">
+        <button onClick={openPopup} className="py-2 px-5 bg-white font-cinzel sm:text-xl">
           Take the first step
         </button>
       </div>

@@ -11,7 +11,7 @@ const ContactUs = () => {
           {/* Header Section */}
           <div className="text-center">
             <h2 className="text-4xl text-[#cc9a64] sm:text-5xl">Contact Us</h2>
-            <p className="mt-4 text-lg font-athena text-gray-300">
+            <p className="mt-4 text-lg font-athena text-greenTheme">
               We’re here to help you find your dream home. Reach out to us for any inquiries or
               assistance.
             </p>
@@ -20,9 +20,9 @@ const ContactUs = () => {
           {/* Grid Layout for Form and About Section */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* About Contacting Section */}
-            <div className="bg-[#1a3a2a] p-8 rounded-lg shadow-lg">
+            <div className="bg-creamBg p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-[#cc9a64]">Why Contact Us?</h3>
-              <p className="mt-4 text-gray-300">
+              <p className="mt-4 text-greenTheme">
               Spaces that feel intuitive, elegant, and endlessly inspiring. From organic farming to smart living, Thoughtfully curated amenities that encourage connection and relaxation. we honor the land we build on.
               </p>
               <div className="mt-6">
@@ -45,8 +45,8 @@ const ContactUs = () => {
       </svg>
     </div>
     <div>
-      <p className="text-lg font-medium text-gray-300">Email Us</p>
-      <p className="text-gray-400">Info@lumoraestates.com</p>
+      <p className="text-lg font-medium text-greenTheme">Email Us</p>
+      <p className="text-greenTheme">Info@lumoraestates.com</p>
     </div>
   </div>
 
@@ -69,8 +69,8 @@ const ContactUs = () => {
       </svg>
     </div>
     <div>
-      <p className="text-lg font-medium text-gray-300">Call Us</p>
-      <p className="text-gray-400">+91 93545 61846</p>
+      <p className="text-lg font-medium text-greenTheme">Call Us</p>
+      <p className="text-greenTheme">+91 93545 61846</p>
     </div>
   </div>
 
@@ -99,8 +99,8 @@ const ContactUs = () => {
       </svg>
     </div>
     <div>
-      <p className="text-lg font-medium text-gray-300">Visit Us</p>
-      <p className="text-gray-400">
+      <p className="text-lg font-medium text-greenTheme">Visit Us</p>
+      <p className="text-greenTheme">
       Lumora Estates Private Limited 8th Floor, <br /> KR Signature Tower, Sector 135, <br /> Noida, Uttar Pradesh 201304
       </p>
     </div>
@@ -109,61 +109,61 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-[#1a3a2a] p-8 rounded-lg shadow-lg">
+            <div className="bg-creamBg p-8 rounded-lg shadow-lg">
               <form>
                 <div className="grid grid-cols-1 gap-6">
                   {/* Full Name Input */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-300">
+                    <label htmlFor="name" className="block text-sm font-medium text-greenTheme">
                       Full Name
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-gray-300 focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
+                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-greenTheme focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
                       placeholder="Name"
                     />
                   </div>
 
                   {/* Email Input */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-300">
+                    <label htmlFor="email" className="block text-sm font-medium text-greenTheme">
                       Email Address
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-gray-300 focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
+                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-greenTheme focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
                       placeholder="Email"
                     />
                   </div>
 
                   {/* Phone Number Input */}
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300">
+                    <label htmlFor="phone" className="block text-sm font-medium text-greenTheme">
                       Phone Number
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-gray-300 focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
+                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-greenTheme focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
                       placeholder="Number"
                     />
                   </div>
 
                   {/* Message Textarea */}
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-300">
+                    <label htmlFor="message" className="block text-sm font-medium text-greenTheme">
                       Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={4}
-                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-gray-300 focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
+                      className="mt-1 block w-full px-4 py-2 bg-[#0e291a] border border-gray-600 rounded-md text-greenTheme focus:ring-[#cc9a64] focus:border-[#cc9a64] hover:border-[#cc9a64] transition-colors"
                       placeholder="Message.."
                     />
                   </div>
