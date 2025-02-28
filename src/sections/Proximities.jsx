@@ -7,7 +7,7 @@ const Proximities = () => {
       <div className="flex flex-wrap justify-center items-stretch">
         <div className="lg:w-[24%] w-[50%]  flex flex-col justify-center border-r border-greenTheme border-solid border-r-1 ">
           <div className="py-4">
-            <p className="text-center sm:text-lg text-sm">3.5 Hours away from</p>
+            <p className="text-center sm:text-lg text-sm">2.5 Hours away from</p>
             <h3 className="text-center sm:text-lg text-sm">Delhi</h3>
           </div>
           <div className="py-4 border-greenTheme border-solid border-t">
