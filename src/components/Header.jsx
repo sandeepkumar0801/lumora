@@ -69,7 +69,7 @@ const Header = ({ lgScreen, bgHeader }) => {
           <li className="hidden lg:block">
             <Link href="/about-us">About Us</Link>
           </li>
-          <li onClick={openPopup} className="hidden cursor-pointer lg:block">
+          <li className="hidden cursor-pointer lg:block">
             Projects
           </li>
           <li ref={navLogoRef}>
