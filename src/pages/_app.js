@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
           <WhatsAppFloat />
           <FloatingButtonWithContext />
-          <BrochureFloatingButtonWithContext />
+          {/* <BrochureFloatingButtonWithContext /> */}
         </BrochureFormProvider>
       </EnquiryFormProvider>
     </>
