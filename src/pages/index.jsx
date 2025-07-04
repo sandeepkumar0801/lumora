@@ -4,8 +4,16 @@ import Homepage from "@/sections/Homepage";
 import LuxuryAbout from "@/sections/LuxuryAbout";
 import Proximities from "@/sections/Proximities";
 import RedifineLuxury from "@/sections/RedifineLuxury";
-import Productpage from "@/sections/Productpage";
+import FloatingActionButton from "@/components/FloatingActionButton";
+import BrochureFloatingButton from "@/components/BrochureFloatingButton";
+import { useContext } from "react";
+import { EnquiryFormContext } from "@/context/EnquiryFormContext";
+import { BrochureFormContext } from "@/context/BrochureFormContext";
+
 export default function Home() {
+  const { openPopup } = useContext(EnquiryFormContext);
+  const { openBrochurePopup } = useContext(BrochureFormContext);
+
   return (
     <>
     <Homepage/>
@@ -13,8 +21,9 @@ export default function Home() {
     <LuxuryAbout />
     < Amenities/>
     < Proximities/>
-    < Productpage/>
     <Footer />
+    <FloatingActionButton onClick={openPopup} />
+    <BrochureFloatingButton onClick={openBrochurePopup} />
     </>
   );
 }
