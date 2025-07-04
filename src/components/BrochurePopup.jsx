@@ -112,7 +112,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
       // Use form submission for PDF download
       const form = document.createElement('form');
       form.method = 'POST';
-      form.action = 'http://localhost:4000/api/enquiry';
+      form.action = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/enquiry`;
       // form.target = '_blank'; // opens download in new tab
 
       for (const key in data) {
@@ -137,7 +137,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
 
     } else {
       // Normal axios post for other requests
-      const response = await axios.post('http://localhost:4000/api/enquiry', data, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/enquiry`, data, {
         headers: { 'Content-Type': 'application/json' },
         timeout: 20000,
       });

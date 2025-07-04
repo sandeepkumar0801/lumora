@@ -107,7 +107,7 @@ const EnquiryFormPopup = ({ isOpen, onClose }) => {
     setSubmitStatus(null);
 
     try {
-      const response = await axios.post('http://localhost:4000/api/enquiry', {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/enquiry`, {
         name: formData.name.trim(),
         mail: formData.mail.trim(),
         phone: formData.phone.trim(),
