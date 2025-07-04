@@ -86,70 +86,65 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submission
-  const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  if (!validateForm()) {
-    return;
-  }
-
-  setIsLoading(true);
-  setSubmitStatus(null);
-  setErrorMessage('');
-  setErrors({});
-
-  // Prepare form data
-  const data = {
-    name: formData.name.trim(),
-    mail: formData.mail.trim(),
-    phone: formData.phone.trim() || '',
-    message: 'Brochure request', // Change dynamically if needed
+  // Function to trigger PDF download
+  const downloadPDF = () => {
+    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1Va0o6U83bXFlTPlf_G45H277q22mbPBp';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'Lumora_Brochure.pdf'; // Specify filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
-  try {
-    if (data.message === 'Brochure request') {
-      // Use form submission for PDF download
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/enquiry`;
-      // form.target = '_blank'; // opens download in new tab
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      for (const key in data) {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = data[key];
-        form.appendChild(input);
-      }
+    if (!validateForm()) {
+      return;
+    }
 
-      document.body.appendChild(form);
-      form.submit();
-      document.body.removeChild(form);
+    setIsLoading(true);
+    setSubmitStatus(null);
+    setErrorMessage('');
+    setErrors({});
 
-      // Set success and reset UI
-      setSubmitStatus('success');
-      setFormData({ name: '', mail: '', phone: '' });
-      setErrors({});
-      setTimeout(() => {
-        handleClose();
-      }, 3000);
+    // Prepare form data
+    const data = {
+      name: formData.name.trim(),
+      mail: formData.mail.trim(),
+      phone: formData.phone.trim() || '',
+      message: 'Brochure request', // Change dynamically if needed
+    };
 
-    } else {
-      // Normal axios post for other requests
+    try {
+      // Send request to server using axios
       const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/enquiry`, data, {
         headers: { 'Content-Type': 'application/json' },
         timeout: 20000,
       });
 
       console.log('Request successful:', response.status);
-      setSubmitStatus('success');
-      setFormData({ name: '', mail: '', phone: '' });
-      setErrors({});
-      setTimeout(() => {
-        handleClose();
-      }, 3000);
-    }
+      console.log('Server response:', response.data);
+
+      // Check if the response indicates success
+      if (response.data && response.data.success) {
+        // Trigger PDF download after successful server response
+        downloadPDF();
+
+        // Set success status and reset UI
+        setSubmitStatus('success');
+        setFormData({ name: '', mail: '', phone: '' });
+        setErrors({});
+        setTimeout(() => {
+          handleClose();
+        }, 3000);
+      } else {
+        // Handle case where server responds but indicates failure
+        setSubmitStatus('error');
+        setErrorMessage('Failed to process your request. Please try again.');
+      }
   } catch (error) {
     setSubmitStatus('error');
     console.error('Submission error:', error);
@@ -290,7 +285,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
             {/* Success Message */}
             {submitStatus === 'success' && (
               <div className="mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded-md">
-                <p className="text-sm">✓ Brochure should be downloaded soon.</p>
+                <p className="text-sm">✓ Request submitted successfully! Your brochure download should start automatically.</p>
               </div>
             )}
 
