@@ -113,7 +113,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
       const form = document.createElement('form');
       form.method = 'POST';
       form.action = 'http://localhost:4000/api/enquiry';
-      form.target = '_blank'; // opens download in new tab
+      // form.target = '_blank'; // opens download in new tab
 
       for (const key in data) {
         const input = document.createElement('input');

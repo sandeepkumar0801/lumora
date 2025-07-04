@@ -1,12 +1,12 @@
+import BrochureFloatingButton from "@/components/BrochureFloatingButton";
 import Header from "@/components/Header";
-import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 import Footer from "@/sections/Footer";
 import Head from "next/head";
 import Image from "next/image";
-import { useContext } from "react";
+
 
 const ProductPage = () => {
-  const { openPopup } = useContext(EnquiryFormContext);
+  
 
   const bannerImages = [
     "/product1.jpg",
@@ -31,10 +31,10 @@ const ProductPage = () => {
     "/product20.jpg",
   ];
 
-  return (
+   return (
     <>
       <Head>
-        <title>Lumora - Our Products</title>
+        <title>Lumora - Project Avacasa</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -60,6 +60,7 @@ const ProductPage = () => {
       </div>
 
       <Footer />
+
     </>
   );
 };

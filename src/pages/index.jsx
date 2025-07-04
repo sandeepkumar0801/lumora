@@ -22,8 +22,7 @@ export default function Home() {
     < Amenities/>
     < Proximities/>
     <Footer />
-    <FloatingActionButton onClick={openPopup} />
-    <BrochureFloatingButton onClick={openBrochurePopup} />
+    {/* <FloatingActionButton onClick={openPopup} /> */}
     </>
   );
 }

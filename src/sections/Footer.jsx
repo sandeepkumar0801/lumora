@@ -39,7 +39,10 @@ const Footer = () => {
           <li className="2xl:text-lg">
             <Link href="/about-us">Abouts us</Link>
           </li>
-          <li onClick={openPopup} className="cursor-pointer 2xl:text-lg">Projects
+          <li className="cursor-pointer 2xl:text-lg">
+            <Link href="/project/avacasa" className="block w-full h-full">
+              Projects
+            </Link>
           </li>
           <li className="2xl:text-lg">
             <Link href="/amenities">Amenities</Link>
