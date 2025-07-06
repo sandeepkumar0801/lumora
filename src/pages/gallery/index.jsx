@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 const Gallery = () => {
   const images = [
-    "/galleryImages/gallery300x320_1.png",
-    "/galleryImages/gallery300x380_5.png",
-    "/galleryImages/gallery300x380_4.png",
-    "/galleryImages/gallery300x320_2.png",
-    "/galleryImages/gallery300x320_3.png",
-    "/galleryImages/gallery300x380_2.jpg",
-    "/galleryImages/gallery300x380_1.jpg",
-    "/galleryImages/gallery300x320_4.jpg",
+    "/galleryImages/gallery300X320_1.png",
+    "/galleryImages/gallery300X380_5.png",
+    "/galleryImages/gallery300X380_4.png",
+    "/galleryImages/gallery300X320_2.png",
+    "/galleryImages/gallery300X320_3.png",
+    "/galleryImages/gallery300X380_2.jpg",
+    "/galleryImages/gallery300X380_1.jpg",
+    "/galleryImages/gallery300X320_4.jpg",
     
   ];
   return (
