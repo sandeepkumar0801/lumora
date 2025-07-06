@@ -3,6 +3,7 @@ import { useState, useEffect, useRef, useContext } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import { EnquiryFormContext } from "@/context/EnquiryFormContext";
 
 const Header = ({ lgScreen, bgHeader }) => {
@@ -13,6 +14,7 @@ const Header = ({ lgScreen, bgHeader }) => {
   const lastNavRefs = useRef([]);
   const navLogoRef = useRef(null);
   const headerRef = useRef(null);
+  const router = useRouter();
 
   const { openPopup } = useContext(EnquiryFormContext);
 
@@ -47,6 +49,13 @@ const Header = ({ lgScreen, bgHeader }) => {
       gsap.to(menuRef.current, { x: "100%", duration: 0.3, ease: "power3.in" });
     }
   }, [menuOpen]);
+
+   const handleClick = (item) => {
+    if (item === "Projects") {
+      router.push('/project/avacasa');
+    }
+  };
+
 
   return (
     <header
@@ -111,7 +120,7 @@ const Header = ({ lgScreen, bgHeader }) => {
                   key={index}
                   ref={(el) => (menuItemsRef.current[index] = el)}
                   className="cursor-pointer"
-                  onClick={item === "Projects" ? openPopup : undefined}
+                  onClick={() => handleClick(item)}
                 >
                   {item === "Projects" ? (
                     item
