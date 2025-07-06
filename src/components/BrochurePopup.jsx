@@ -68,18 +68,22 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
       newErrors.name = 'Name is required';
     }
 
-    // Email validation
+    // Email validation - required
     if (!formData.mail.trim()) {
       newErrors.mail = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.mail)) {
-      newErrors.mail = 'Please provide a valid email';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.mail.trim())) {
+      newErrors.mail = 'Please provide a valid email address';
     }
 
-    // Phone validation (optional but if provided, must be valid)
-    if (formData.phone.trim() && !/^\d+$/.test(formData.phone)) {
-      newErrors.phone = 'Phone number must contain only digits';
-    } else if (formData.phone.trim() && (formData.phone.length < 10 || formData.phone.length > 15)) {
-      newErrors.phone = 'Phone number must be between 10-15 digits';
+    // Phone validation - optional but if provided, must be valid (at least 10 digits)
+    if (formData.phone.trim()) {
+      if (!/^\d+$/.test(formData.phone)) {
+        newErrors.phone = 'Phone number must contain only digits';
+      } else if (formData.phone.length < 10) {
+        newErrors.phone = 'Phone number must be at least 10 digits';
+      } else if (formData.phone.length > 15) {
+        newErrors.phone = 'Phone number cannot exceed 15 digits';
+      }
     }
 
     setErrors(newErrors);
@@ -115,7 +119,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
       name: formData.name.trim(),
       mail: formData.mail.trim(),
       phone: formData.phone.trim() || '',
-      message: 'Brochure request', // Change dynamically if needed
+      message: 'Brochure request', //
     };
 
     try {
