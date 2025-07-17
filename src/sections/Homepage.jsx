@@ -7,31 +7,34 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import PageLoader from "@/components/PageLoader";
 gsap.registerPlugin(ScrollTrigger);
 
-const ViewContainer = ({ items }) => {
-  const viewBoxRef = useRef(null);
+export const ViewContainer = ({ items }) => {
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(".view-box", {
-      scrollTrigger: {
-        trigger: viewBoxRef.current,
-        start: "top bottom",
-        end: "30% 30%",
-        scrub: true,
-        once: true,
-      },
-      opacity: 0,
-      y: 250,
-      duration: 5,
-      ease: "power2.out",
-      stagger: 0.5,
-    });
+    if (containerRef.current) {
+      const viewBoxes = containerRef.current.querySelectorAll('.view-box');
+      
+      gsap.from(viewBoxes, {
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top bottom",
+          end: "30% 30%",
+          scrub: true,
+          once: true,
+        },
+        opacity: 0,
+        y: 250,
+        duration: 5,
+        ease: "power2.out",
+        stagger: 0.5,
+      });
+    }
   }, []);
 
   return (
-    <div className="bg-white w-full m-auto flex flex-wrap">
+    <div ref={containerRef} className="bg-white w-full m-auto flex flex-wrap">
       {items.map((item, index) => (
         <div
-          ref={viewBoxRef}
           key={index}
           className="relative view-box lg:w-[25%] m-auto w-[50%] h-[47.5vh] lg:h-[90vh] sm:h-[70vh] border border-white"
         >
@@ -51,13 +54,17 @@ const ViewContainer = ({ items }) => {
           </div>
 
           <div className="absolute left-1/2 top-[65%] -translate-x-1/2 -translate-y-1/2 w-[75px] h-[75px]">
-            <Image
-              width={90} height={90} layout="responsive"
-              
-              src={item.icon}
-              alt="Icon"
-              className="w-[5vw] object-cover"
-            />
+            {item.icon && (
+                <Image
+                  width={90}
+                  height={90}
+                  layout="responsive"
+                  src={item.icon}
+                  alt="Icon"
+                  className="w-[5vw] object-cover"
+                />
+              )}
+
           </div>
         </div>
       ))}
@@ -82,13 +89,13 @@ const Homepage = () => {
     {
       image: "/Resort-living.png",
       alt: "resort-living-img",
-      title: "Resort living",
+      title: "Elevated Second Homes ",
       icon: "/Resort-living-icon.png",
     },
     {
       image: "/Zen-garden.png",
       alt: "zen-garden-img",
-      title: "Zen garden",
+      title: "Sanctuary Spaces",
       icon: "/Zen-garden-icon.png",
     },
   ];
@@ -102,11 +109,11 @@ const Homepage = () => {
         <div className="absolute bg-greenTheme w-[26.9%] 450:block hidden h-full  top-0 -z-[10]">
           <div className="pl-[17.5%] absolute pr-[10%] md:pt-[25%] pt-[60px]">
             <h1 className="text-mainText leading-tight text-[2.5vw]">
-              Where vision meets reality and dreams find their address
+              Some addresses don’t just pin you on a map, they place you in a moment.
             </h1>
             <h2 className="text-white text-[1.55vw]  font-athena pt-2">
-              This isn't just real estate: it's a philosophy.One that asks, "Why
-              settle for ordinary when you can live extraordinary?"
+              Where time doesn’t chase, it flows.<br></br>
+              Where the view isn’t borrowed, it belongs.
             </h2>
           </div>
           <Image
@@ -139,8 +146,8 @@ const Homepage = () => {
             </h2>
           </div>
         </div>
-        <h1>This isn't just a home</h1>
-        <h1>It's a story Woven in nature!</h1>
+        <h1>More than a home.</h1>
+        <h1>It’s a living canvas of nature, comfort, and quiet joy.</h1>
       </div>
       <ViewContainer items={items} />
     </section>

@@ -30,7 +30,7 @@ const Gallery = () => {
             Our Gallery
           </h2>
           <p className="mt-4 text-lg font-athena text-gray-300">
-            Explore some of the stunning properties we’ve helped our clients find.
+          Every frame tells a story of quiet luxury of homes shaped by wind, wood, and wonder.
           </p>
         </div>
 

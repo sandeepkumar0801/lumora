@@ -13,26 +13,16 @@ const LuxuryAbout = () => {
               fill
               layout="fill"
               className="w-full h-full object-cover"
-              src="/Luxury-retreat.png"
+              src="/Luxury-retreat.jpg"
               alt="luxury-about"
             />
           </div>
           <div className="content xl:w-[510px] w-[475px] -translate-y-8 sm:px-0 px-4">
             <h1 className="lg:text-4xl text-3xl text-start text-themeText">Lumora Estates</h1>
-            <h1 className="lg:text-4xl text-3xl text-start text-themeText">The luxury retreat</h1>
+            <h1 className="lg:text-4xl text-3xl text-start text-themeText">The evergreen luxury </h1>
             <p className="py-8 leading-normal">
-              Welcome to Lumora Estates, where passion meets purpose.
-              <br /> Founded in 2024, we have swiftly become a trailblazer in
-              the real estate sector, transforming challenges into opportunities
-              and turning ideas into impactful solutions. As a trusted partner,
-              we drive success for our clients through innovation, commitment,
-              and a customer-first approach.
-            </p>
-            <p className=" leading-normal">
-              At the core of our organization is a dynamic team of professionals
-              who bring their expertise, creativity, and dedication to every
-              project. Together, we strive to make a lasting impact, ensuring
-              excellence in all aspects of our business.
+              Founded in 2024 and headquartered in Noida, Lumora Estates is devoted to crafting bespoke second homes for those who seek more than just luxury – for those who truly desire peace and tranquility.
+Backed by visionary leadership and a passionate team, we bring intricate designs to our core commitment to sustainability
             </p>
           </div>
         </div>

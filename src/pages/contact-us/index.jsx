@@ -204,8 +204,9 @@ const ContactUs = () => {
         <div className="bg-creamBg p-8 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold text-[#cc9a64]">Why Contact Us?</h3>
           <p className="mt-4 text-greenTheme">
-            Spaces that feel intuitive, elegant, and endlessly inspiring. From organic farming to smart living, 
-            Thoughtfully curated amenities that encourage connection and relaxation. We honor the land we build on.
+            This isn’t just about finding a home.
+It’s about embracing slower mornings, greener surroundings, and spaces that feel naturally in rhythm. A journey begins here toward something quieter, something lasting.
+
           </p>
           <div className="mt-6">
             {/* Email Section */}

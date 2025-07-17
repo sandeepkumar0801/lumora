@@ -71,7 +71,7 @@ const Header = ({ lgScreen, bgHeader }) => {
           </li>
           <li className="hidden lg:block">
             <Link href="/project/avacasa" className="cursor-pointer">
-              Projects
+              Avacasa
             </Link>
           </li>
 

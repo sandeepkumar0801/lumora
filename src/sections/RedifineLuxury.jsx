@@ -1,16 +1,46 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
+import {ViewContainer} from "./Homepage";
 import gsap from "gsap";
 
 
 
 const RedifineLuxury = () => {
-  const paraContent = [
-    "Resort Living Spread in Acres",
-    "Smart City Development",
-    "Wellness Real Estate",
-    "Quality and Innovation",
-  ];
+  // const paraContent = [
+  //   "Nature Retreat",
+  //   "Future-Ready Development",
+  //   "Wellness Living",
+  //   "Quality and Innovation",
+  // ];
+  const Content=[
+    {
+      image: "/Nature-Retreat.jpg",
+      alt: "Nature Retreat_img",
+      title: "Nature Retreat",
+      // icon: "/Nature-icon.png",
+
+    },
+    {
+      image: "/Ready-Development.jpg",
+      alt: "Future-Ready Development_img",
+      title: "Future-Ready Development",
+      // icon: "/Nature-icon.png",
+
+    },
+    {
+      image: "/Wellness-Living.jpg",
+      alt: "Wellness Living_img",
+      title: "Wellness Living",
+      // icon: "/Nature-icon.png",
+
+    },
+    {
+      image: "/Crafted-Excellence.jpg",
+      alt: "Quality and Innovation_img",
+      title: "Quality and Innovation",
+      // icon: "/Nature-icon.png",
+    }
+  ]
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -25,10 +55,10 @@ const RedifineLuxury = () => {
     <section className="">
       <div className="w-full flex flex-col items-center ">
         <h1 className="lg:text-4xl sm:text-3xl text-2xl text-center text-themeText 450:pt-[3rem] pt-[2rem] pb-[1.5rem] font-medium">
-          Are you ready to redefine luxury?
+          Can luxury feel like coming home?
         </h1>
         <p className="text-center 450:w-[70%] w-[90%] pb-[0.75rem] sm:text-lg text-sm">
-        Imagine mornings in the foothills near the Delhi-Dehradun Expressway where sunlight filters through emerald canopies, afternoons spent savoring the greens of a private golf course, and evenings gathering around a crackling campfire.
+          Wake up by forest foothills, sip slow mornings in open greens, and gather under starlit skies. This is what coming home should feel like.
         </p>
       </div>
       <div className="w-full relative pt-4">
@@ -52,7 +82,7 @@ const RedifineLuxury = () => {
         <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-white via-white/80 to-transparent pointer-events-none"></div>
       </div>
       <div className="flex flex-wrap w-full bg-creamBg justify-evenly">
-        {paraContent.map((content, index) => (
+        {/* {paraContent.map((content, index) => (
           <div
             className="flex flex-col px-6 md:py-8 py-4 md:gap-4 gap-2 items-center jusitify-center sm:w-[20%] w-[50%]"
             key={index}
@@ -64,7 +94,8 @@ const RedifineLuxury = () => {
               {content}
             </h2>
           </div>
-        ))}
+        ))} */}
+        <ViewContainer items={Content}/>
       </div>
     </section>
   );
