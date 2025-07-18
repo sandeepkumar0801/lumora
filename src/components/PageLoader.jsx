@@ -62,7 +62,7 @@ const PageLoader = () => {
           Lumora
         </h1>
         <h3 ref={h3Ref} className="450:text-[2.9vw] text-[4vw]">
-          for a better way of life
+          Enlightened Living.
         </h3>
       </div>
     </div>
