@@ -15,6 +15,7 @@ const ProductPage = () => {
     "/product8.jpg",
     "/product5.jpg",
     "/product10.jpg",
+    "/product21.jpg",
     "/product7.jpg",
     "/product4.jpg",
     "/product9.jpg",
