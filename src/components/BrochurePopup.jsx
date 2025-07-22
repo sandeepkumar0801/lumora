@@ -74,17 +74,20 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.mail.trim())) {
       newErrors.mail = 'Please provide a valid email address';
     }
-
+    
+    const phoneTrimmed = formData.phone.trim();
     // Phone validation - optional but if provided, must be valid (at least 10 digits)
-    if (formData.phone.trim()) {
-      if (!/^\d+$/.test(formData.phone)) {
-        newErrors.phone = 'Phone number must contain only digits';
-      } else if (formData.phone.length < 10) {
-        newErrors.phone = 'Phone number must be at least 10 digits';
-      } else if (formData.phone.length > 15) {
-        newErrors.phone = 'Phone number cannot exceed 15 digits';
-      }
+    if (!phoneTrimmed) {
+    newErrors.phone = 'Phone number is required';
+    } else if (!/^\d+$/.test(phoneTrimmed)) {
+      newErrors.phone = 'Phone number must contain only digits';
+    } else if (phoneTrimmed.length < 10) {
+      newErrors.phone = 'Phone number must be at least 10 digits';
+    } else if (phoneTrimmed.length > 15) {
+      newErrors.phone = 'Phone number cannot exceed 15 digits';
     }
+
+    
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -118,7 +121,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
     const data = {
       name: formData.name.trim(),
       mail: formData.mail.trim(),
-      phone: formData.phone.trim() || '',
+      phone: formData.phone.trim(),
       message: 'Brochure request', //
     };
 
@@ -259,7 +262,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
               {errors.mail && <p className="mt-1 text-sm text-red-600">{errors.mail}</p>}
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700">Phone</label>
+              <label className="block text-sm font-medium text-gray-700">Phone*</label>
               <input
                 type="tel"
                 name="phone"
@@ -268,7 +271,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
                 className={`mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-mainText ${
                   errors.phone ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder="Enter your phone number (optional)"
+                placeholder="Enter your phone number"
               />
               {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
             </div>
