@@ -5,27 +5,7 @@ import Link from "next/link";
 const sections1 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/Green_Clean.png",
-    alt: "amenities_img",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Green and clean environment",
-  },
-  {
-    theme: "bg-creamBg font-semibold",
-    image: "",
-    text: "Trekking near water bodies",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Trekking.png",
-    alt: "amenities_img",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/scenic_views.png",
+    image: "/Scenic-View.jpg",
     alt: "amenities_img",
   },
   {
@@ -33,12 +13,32 @@ const sections1 = [
     image: "",
     text: "Scenic Views",
   },
+  {
+    theme: "bg-creamBg font-semibold",
+    image: "",
+    text: "Hiking",
+  },
+  {
+    theme: "bg-greenTheme text-white",
+    image: "/Hiking.jpg",
+    alt: "amenities_img",
+  },
+  {
+    theme: "bg-greenTheme text-white",
+    image: "/Organic-Kitchen-Garden.jpg",
+    alt: "amenities_img",
+  },
+  {
+    theme: "bg-greenTheme font-semibold text-white",
+    image: "",
+    text: "Organic Kitchen Garden",
+  },
 ];
 
 const sections2 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/Basketball_court.png",
+    image: "/Basket-Ball.jpg",
     alt: "amenitiesImg",
   },
   {
@@ -49,11 +49,11 @@ const sections2 = [
   {
     theme: "bg-creamBg font-semibold",
     image: "",
-    text: "Fruit Orchid",
+    text: "Gym",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Fruit_Orchid.png",
+    image: "/Gym.jpg",
     alt: "amenitiesImg",
   },
   {
@@ -71,33 +71,33 @@ const sections2 = [
 const sections3 = [
   {
     theme: "bg-greenTheme text-white",
-    image: "/pool_deck.png",
+    image: "/Infinity-Swimming-Pool.jpg",
     alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Pool Deck",
+    text: "Infinity Swimming Pool",
   },
   {
     theme: "bg-creamBg font-semibold",
     image: "",
-    text: "Tree Climbing",
+    text: "Yoga And Meditation",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Tree_Climbing.png",
+    image: "/Yoga-&-Meditation-Zones.jpg",
     alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme text-white",
-    image: "/Lawn.png",
+    image: "/Spa-&-Sauna.jpg",
     alt: "amenitiesImg",
   },
   {
     theme: "bg-greenTheme font-semibold text-white",
     image: "",
-    text: "Lawn",
+    text: "Spa & Sauna",
   },
 ];
 

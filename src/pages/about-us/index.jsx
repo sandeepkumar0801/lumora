@@ -43,8 +43,7 @@ const AboutUs = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl text-greenTheme sm:text-5xl">About Us</h2>
             <p className="mt-4 text-lg font-athena text-black">
-              We are dedicated to providing exceptional real estate solutions
-              tailored to your needs.
+              At Lumora Estates, we create sanctuaries that one can call their second home. Here, green isn't just an aesthetic but it's a lifestyle and a modern luxury. It's about finding exquisite comfort in the very heart of nature. 
             </p>
           </div>
 
@@ -78,19 +77,10 @@ const AboutUs = () => {
             <div className="space-y-6">
               <h3 className="text-3xl text-greenTheme">Who We Are</h3>
               <p className="text-lg text-black">
-                Welcome to Lumora Estates, where passion meets purpose. Founded
-                in 2024, we have swiftly become a trailblazer in the real estate
-                sector, transforming challenges into opportunities and turning
-                ideas into impactful solutions. As a trusted partner, we drive
-                success for our clients through innovation, commitment, and a
-                customer-first approach.
+                Founded in 2024 and headquartered in Noida, Lumora Estates is devoted to crafting bespoke second homes for those who seek more than just luxury – for those who truly desire peace and tranquility..
               </p>
               <p className="text-lg text-black">
-                At the core of our organization is a dynamic team of
-                professionals who bring their expertise, creativity, and
-                dedication to every project. Together, we strive to make a
-                lasting impact, ensuring excellence in all aspects of our
-                business.
+                Backed by visionary leadership and a passionate team, we bring intricate designs to our core commitment to sustainability.
               </p>
               <div className="flex space-x-4">
                 <button
@@ -113,11 +103,12 @@ const AboutUs = () => {
               Our Mission
             </h2>
             <p className="text-gray-700">
-              Our mission is to set the benchmark for excellence in real estate
-              by designing spaces that blend luxury, functionality, and
-              environmental stewardship. We are committed to delivering top-tier
-              real estate solutions and embracing cutting-edge technology to
-              make a meaningful difference.
+              To reimagine second-home living as a profound experience
+where elegance is intuitive, sustainability at core, and every
+detail is shaped with a motive. We are committed to creating
+sanctuaries that elevate lifestyles while thinking about the land
+they stand on.  
+
             </p>
           </div>
 
@@ -127,9 +118,7 @@ const AboutUs = () => {
               Our Vision
             </h2>
             <p className="text-gray-700">
-              To become a recognized leader in the real estate sector by setting
-              new standards for quality and innovation, while building lasting
-              relationships with clients and communities.
+              To become a name synonymous with thoughtful luxury, recognized not only for our beautiful architecture but for the emotional resonance of our spaces. We envision landscapes where our homes aren't just built; they belong, seamlessly integrating with the existing environment. For us, sustainability is at the very core of every property we build.
             </p>
           </div>
         </div>
@@ -139,27 +128,23 @@ const AboutUs = () => {
           {/* Core Values */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-center text-greenTheme">
-              Core Values
+              Our Core Values
             </h2>
             <ul className="space-y-4 text-gray-700 font-poppins">
               <li className="font-poppins">
-                <strong>Customer Centricity:</strong> Our customers are at the
-                heart of everything we do.
+                <strong>Customer-Centric Approach:</strong> We design every experience around what matters most to our customers.
               </li>
               <li className="font-poppins">
-                <strong>Innovation:</strong> We embrace creativity to stay ahead
-                of the curve.
+                <strong>Innovative Thinking:</strong> We challenge convention and embrace creativity to deliver future-forward living.
               </li>
               <li className="font-poppins">
-                <strong>Integrity:</strong> Honesty and transparency define our
-                work ethic.
+                <strong>Integrity at the Core:</strong>Transparency, honesty, and trust guide every decision we make.
               </li>
               <li className="font-poppins">
-                <strong>Sustainability:</strong> We are dedicated to building a
-                greener, more sustainable future.
+                <strong>Commitment to Sustainability:</strong>We build with care for the land, for the future, and for generations to come.
               </li>
               <li className="font-poppins">
-                <strong>Teamwork:</strong> Collaboration is key to our success.
+                <strong>Collaborative Spirit:</strong> We believe great ideas grow stronger together. Teamwork fuels our success.
               </li>
             </ul>
           </div>
@@ -167,29 +152,45 @@ const AboutUs = () => {
           {/* Expertise */}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-center text-greenTheme">
-              Our Expertise
+              What Makes Us Unique
             </h2>
             <ul className="space-y-4 text-gray-700">
               <li className="font-poppins">
-                <strong>Eco-Luxury Retreats:</strong> Sustainable, boutique
-                properties in scenic locations.
+                <strong>Seamless Access, Serene Surroundings: </strong>Our projects strike the perfect balance well-connected to major cities yet peacefully nestled in nature.
               </li>
               <li className="font-poppins">
-                <strong>Smart City Development:</strong> Future-ready urban
-                communities with IoT and green solutions.
+                <strong>Holistic Living Experiences: </strong>Every home is built with wellness at its heart: from biophilic architecture and clean-air systems to tranquil yoga and meditation zones.
               </li>
               <li className="font-poppins">
-                <strong>Pop-Up Spaces:</strong> Short-term rentals for events
-                and retail experiments.
+                <strong>Future-Forward Communities: </strong>We create smart, sustainable neighborhoods with IoT-ready infrastructure and eco-conscious design.
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-center text-greenTheme">
+              Our Team
+            </h2>
+            <ul className="space-y-4 text-gray-700">
+              <li className="font-poppins">
+                Our team is a dynamic blend of real estate veterans and creative visionaries united by passion, precision, and purpose. Together, we transform Lumora’s vision into soulful sanctuaries that endure             </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-center text-greenTheme">
+              Why Choose Us
+            </h2>
+            <ul className="space-y-4 text-gray-700">
+              <li className="font-poppins">
+                You seek a home that fosters calm as much as comfort.
               </li>
               <li className="font-poppins">
-                <strong>Wellness Real Estate:</strong> Homes designed for
-                wellness, featuring meditation spaces, air purifiers, and
-                biophilic designs.
+                You value direct yet gentle connections with nature.
               </li>
               <li className="font-poppins">
-                <strong>Adaptive Reuse:</strong> Transforming old buildings into
-                modern, vibrant spaces.
+              You believe in sustainable luxury and thoughtful design.
+              </li>
+              <li className="font-poppins">
+              You expect quality, transparency, and trust every step of the way.
               </li>
             </ul>
           </div>

@@ -28,10 +28,8 @@ const Footer = () => {
       </div>
       <div className="w-full flex gap-[25px] flex-wrap sm:justify-around justify-between ">
         <p className=" sm:w-[33%] md:w-[28%] lg:text-[1.15vw] w-full text-white">
-          At Lumora Estates, nature isn't a neighbor; it's family. We seamlessly
-          blend luxury with sustainability, creating sanctuaries that offer not
-          just Villas but harmony. At Lumora Estates, we've reimagined what it
-          means to escape the ordinary.
+        At Lumora Estates, we craft havens where luxury flows gently with the land, and every space is shaped by stillness, sunlight, and intention.<br></br>
+This is where sustainability whispers through design, and life finds rhythm beyond the noise.
         </p>
         
         <ul className="flex flex-col min-w-[150px] text-white gap-3">

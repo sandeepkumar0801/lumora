@@ -6,49 +6,49 @@ import Image from "next/image";
 const Amenities = () => {
   const amenities = [
     {
-      title: "Green and Clean Enviorment",
-      image:
-        "/Green_Clean.png",
-    },
-    {
       title: "Scenic Views",
       image:
-        "/scenic_views.png",
+        "/Scenic-View.jpg",
     },
     {
-      title: "Trekking",
+      title: "BasketBall",
       image:
-        "/Trekking.png",
+        "/Basket-Ball.jpg",
     },
     {
-      title: "Tree Climbing",
+      title: "Hiking",
       image:
-        "/Tree_Climbing.png",
+        "/Hiking.jpg",
     },
     {
-      title: "Pool Deck",
+      title: "Gym",
       image:
-        "/pool_deck.png",
+        "/Gym.jpg",
     },
     {
-      title: "Basketball Court",
+      title: "Spa & Sauna",
       image:
-        "/Basketball_court.png",
+        "/Spa-&-Sauna.jpg",
     },
     {
-      title: "Fruit Orchid",
+      title: "Organic Kitchen Garden",
       image:
-        "/Fruit_Orchid.png",
+        "/Organic-Kitchen-Garden.jpg",
     },
     {
-      title: "Lawn",
+      title: "Yoga And Meditation",
       image:
-        "/Lawn.png",
+        "/Yoga-&-Meditation-Zones.jpg",
     },
     {
       title: "Lazy River",
       image:
         "/Lazy_river.png",
+    },
+    {
+      title: "Infinity Swimming Pool",
+      image:
+        "/Infinity-Swimming-Pool.jpg",
     },
     
   ];

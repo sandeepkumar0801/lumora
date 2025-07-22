@@ -95,7 +95,7 @@ const BrochureFormPopup = ({ isOpen, onClose }) => {
 
   // Function to trigger PDF download
   const downloadPDF = () => {
-    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1Va0o6U83bXFlTPlf_G45H277q22mbPBp';
+    const pdfUrl = 'https://drive.google.com/file/d/19BRbafCTXVTj1TRTXCtVWoYsK07LXy6G/view?usp=drive_link';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Lumora_Brochure.pdf'; // Specify filename for download
