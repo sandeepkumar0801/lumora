@@ -11,7 +11,7 @@ const Amenities = () => {
         "/Scenic-View.jpg",
     },
     {
-      title: "BasketBall",
+      title: "Volleyball Court",
       image:
         "/Basket-Ball.jpg",
     },
@@ -41,9 +41,9 @@ const Amenities = () => {
         "/Yoga-&-Meditation-Zones.jpg",
     },
     {
-      title: "Lazy River",
+      title: "Kids Area",
       image:
-        "/Lazy_river.png",
+        "/kits_area.jpg",
     },
     {
       title: "Infinity Swimming Pool",

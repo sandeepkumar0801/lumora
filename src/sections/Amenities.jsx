@@ -2,104 +2,208 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Each grid array should contain 12 objects with unique data
-const sections1 = [
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Scenic-View.jpg",
-    alt: "amenities_img",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Scenic Views",
-  },
-  {
-    theme: "bg-creamBg font-semibold",
-    image: "",
-    text: "Hiking",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Hiking.jpg",
-    alt: "amenities_img",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Organic-Kitchen-Garden.jpg",
-    alt: "amenities_img",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Organic Kitchen Garden",
-  },
-];
+const getAmenitiesSections = (projectType = 'default') => {
+  const amenitiesData = {
+    default: {
+      sections1: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Scenic-View.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Scenic Views",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Hiking",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Hiking.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Organic-Kitchen-Garden.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Organic Kitchen Garden",
+        },
+      ],
+      sections2: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Basket-Ball.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Volleyball Court",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Gym",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Gym.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Pet_Spaces.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Pet Spaces",
+        },
+      ],
+      sections3: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "Infinity_pool.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Infinity Swimming Pool",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Yoga And Meditation",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Yoga-&-Meditation-Zones.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Spa-&-Sauna.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Spa & Sauna",
+        },
+      ]
+    },
+    avacasa: {
+      sections1: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Scenic-View.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Scenic Views",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Infinity Swimming Pool",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Infinity_pool.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Gym.jpg",
+          alt: "amenities_img",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Gym",
+        },
+      ],
+      sections2: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Kits_area.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Kids Play Area",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Jogging Track",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Green_Clean.png",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Clubhouse.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Clubhouse",
+        },
+      ],
+      sections3: [
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Smart_home.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Power Backup",
+        },
+        {
+          theme: "bg-creamBg font-semibold",
+          image: "",
+          text: "Security Systems",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Smart_home.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme text-white",
+          image: "/Hiking.jpg",
+          alt: "amenitiesImg",
+        },
+        {
+          theme: "bg-greenTheme font-semibold text-white",
+          image: "",
+          text: "Hiking",
+        },
+      ]
+    }
+  };
 
-const sections2 = [
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Basket-Ball.jpg",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Basketball Court",
-  },
-  {
-    theme: "bg-creamBg font-semibold",
-    image: "",
-    text: "Gym",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Gym.jpg",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Lazy_river.png",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Lazy River",
-  },
-];
-
-const sections3 = [
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Infinity-Swimming-Pool.jpg",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Infinity Swimming Pool",
-  },
-  {
-    theme: "bg-creamBg font-semibold",
-    image: "",
-    text: "Yoga And Meditation",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Yoga-&-Meditation-Zones.jpg",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme text-white",
-    image: "/Spa-&-Sauna.jpg",
-    alt: "amenitiesImg",
-  },
-  {
-    theme: "bg-greenTheme font-semibold text-white",
-    image: "",
-    text: "Spa & Sauna",
-  },
-];
+  return amenitiesData[projectType] || amenitiesData.default;
+};
 
 const GridSection = ({ sections }) => {
   return (
@@ -129,12 +233,13 @@ const GridSection = ({ sections }) => {
   );
 };
 
-const Amenities = () => {
+const Amenities = ({ projectType = 'default' }) => {
+  const { sections1, sections2, sections3 } = getAmenitiesSections(projectType);
+
   return (
     <section className="pt-12">
       <h1 className="text-4xl text-themeText text-center pb-6">Amenities</h1>
       
-
       <div className="w-full flex flex-wrap justify-center">
         {/* For large screens (lg and above): 3 parent sections */}
         <div className="lg:flex hidden">

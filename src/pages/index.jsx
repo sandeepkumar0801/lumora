@@ -19,7 +19,7 @@ export default function Home() {
     <Homepage/>
     <RedifineLuxury/>
     <LuxuryAbout />
-    < Amenities/>
+    {/* < Amenities/> */}
     < Proximities/>
     <Footer />
     {/* <FloatingActionButton onClick={openPopup} /> */}
